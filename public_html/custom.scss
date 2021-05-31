@@ -136,21 +136,21 @@ $linkey-red-900: shade-color($linkey-red, 80%) !default;
     background-position: 35% center;
 }
 .webp #top .my_bg.hero{
-    background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("../../images/background/hero_bg_image.webp");
+    background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.webp");
 }
 .no-webp #top .my_bg.hero{
-    background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("../../images/background/hero_bg_image.jpg");
+    background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.jpg");
 }
 @media (min-width: 576px) {
     .webp #top .my_bg.hero{
         background-image:
         radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
-        url("../../images/background/hero_bg_image.webp");
+        url("images/background/hero_bg_image.webp");
     }
     .no-webp #top .my_bg.hero{
         background-image:
         radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
-        url("../../images/background/hero_bg_image.jpg");
+        url("images/background/hero_bg_image.jpg");
     }
 }
 $alpha_k: -0.7;
@@ -186,7 +186,7 @@ $ap0: color.adjust($pink, $alpha: -1);
     -webkit-text-fill-color: transparent;
 }
 .bg_linkey_points{
-    background: url("../../../images/icon/icon_linkey.svg"),
+    background: url("images/icon/icon_linkey.svg"),
     linear-gradient($pink 0%, $primary 100%);
     background-size: cover;
     background-repeat: no-repeat;
