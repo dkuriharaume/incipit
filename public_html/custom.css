@@ -34,6 +34,8 @@
   --bs-cardinal: #38312d;
   --bs-bpurple: #38312d;
   --bs-dblue: #38312d;
+  --bs-whitea80: #ffffffdd;
+  --bs-whitea70: #ffffffbb;
   --bs-font-sans-serif: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -2331,6 +2333,66 @@ progress {
   border-color: #38312d;
 }
 
+.btn-whitea80 {
+  color: #38312d;
+  background-color: #ffffffdd;
+  border-color: #ffffffdd;
+}
+.btn-whitea80:hover {
+  color: #38312d;
+  background-color: rgba(255, 255, 255, 0.8866666667);
+  border-color: rgba(255, 255, 255, 0.88);
+}
+.btn-check:focus + .btn-whitea80, .btn-whitea80:focus {
+  color: #38312d;
+  background-color: rgba(255, 255, 255, 0.8866666667);
+  border-color: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 0 0 0.25rem rgba(218, 216, 216, 0.5);
+}
+.btn-check:checked + .btn-whitea80, .btn-check:active + .btn-whitea80, .btn-whitea80:active, .btn-whitea80.active, .show > .btn-whitea80.dropdown-toggle {
+  color: #38312d;
+  background-color: rgba(255, 255, 255, 0.8933333333);
+  border-color: rgba(255, 255, 255, 0.88);
+}
+.btn-check:checked + .btn-whitea80:focus, .btn-check:active + .btn-whitea80:focus, .btn-whitea80:active:focus, .btn-whitea80.active:focus, .show > .btn-whitea80.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(218, 216, 216, 0.5);
+}
+.btn-whitea80:disabled, .btn-whitea80.disabled {
+  color: #38312d;
+  background-color: #ffffffdd;
+  border-color: #ffffffdd;
+}
+
+.btn-whitea70 {
+  color: #38312d;
+  background-color: #ffffffbb;
+  border-color: #ffffffbb;
+}
+.btn-whitea70:hover {
+  color: #38312d;
+  background-color: rgba(255, 255, 255, 0.7733333333);
+  border-color: rgba(255, 255, 255, 0.76);
+}
+.btn-check:focus + .btn-whitea70, .btn-whitea70:focus {
+  color: #38312d;
+  background-color: rgba(255, 255, 255, 0.7733333333);
+  border-color: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 0 0 0.25rem rgba(209, 207, 206, 0.5);
+}
+.btn-check:checked + .btn-whitea70, .btn-check:active + .btn-whitea70, .btn-whitea70:active, .btn-whitea70.active, .show > .btn-whitea70.dropdown-toggle {
+  color: #38312d;
+  background-color: rgba(255, 255, 255, 0.7866666667);
+  border-color: rgba(255, 255, 255, 0.76);
+}
+.btn-check:checked + .btn-whitea70:focus, .btn-check:active + .btn-whitea70:focus, .btn-whitea70:active:focus, .btn-whitea70.active:focus, .show > .btn-whitea70.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(209, 207, 206, 0.5);
+}
+.btn-whitea70:disabled, .btn-whitea70.disabled {
+  color: #38312d;
+  background-color: #ffffffbb;
+  border-color: #ffffffbb;
+}
+
 .btn-outline-primary {
   color: #baada8;
   border-color: #baada8;
@@ -2628,6 +2690,56 @@ progress {
 }
 .btn-outline-dblue:disabled, .btn-outline-dblue.disabled {
   color: #38312d;
+  background-color: transparent;
+}
+
+.btn-outline-whitea80 {
+  color: #ffffffdd;
+  border-color: #ffffffdd;
+}
+.btn-outline-whitea80:hover {
+  color: #38312d;
+  background-color: #ffffffdd;
+  border-color: #ffffffdd;
+}
+.btn-check:focus + .btn-outline-whitea80, .btn-outline-whitea80:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+}
+.btn-check:checked + .btn-outline-whitea80, .btn-check:active + .btn-outline-whitea80, .btn-outline-whitea80:active, .btn-outline-whitea80.active, .btn-outline-whitea80.dropdown-toggle.show {
+  color: #38312d;
+  background-color: #ffffffdd;
+  border-color: #ffffffdd;
+}
+.btn-check:checked + .btn-outline-whitea80:focus, .btn-check:active + .btn-outline-whitea80:focus, .btn-outline-whitea80:active:focus, .btn-outline-whitea80.active:focus, .btn-outline-whitea80.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+}
+.btn-outline-whitea80:disabled, .btn-outline-whitea80.disabled {
+  color: #ffffffdd;
+  background-color: transparent;
+}
+
+.btn-outline-whitea70 {
+  color: #ffffffbb;
+  border-color: #ffffffbb;
+}
+.btn-outline-whitea70:hover {
+  color: #38312d;
+  background-color: #ffffffbb;
+  border-color: #ffffffbb;
+}
+.btn-check:focus + .btn-outline-whitea70, .btn-outline-whitea70:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+}
+.btn-check:checked + .btn-outline-whitea70, .btn-check:active + .btn-outline-whitea70, .btn-outline-whitea70:active, .btn-outline-whitea70.active, .btn-outline-whitea70.dropdown-toggle.show {
+  color: #38312d;
+  background-color: #ffffffbb;
+  border-color: #ffffffbb;
+}
+.btn-check:checked + .btn-outline-whitea70:focus, .btn-check:active + .btn-outline-whitea70:focus, .btn-outline-whitea70:active:focus, .btn-outline-whitea70.active:focus, .btn-outline-whitea70.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+}
+.btn-outline-whitea70:disabled, .btn-outline-whitea70.disabled {
+  color: #ffffffbb;
   background-color: transparent;
 }
 
@@ -3597,6 +3709,34 @@ progress {
   border-color: #221d1b;
 }
 
+.list-group-item-whitea80 {
+  color: rgba(123, 119, 116, 0.9466666667);
+  background-color: rgba(255, 255, 255, 0.9733333333);
+}
+.list-group-item-whitea80.list-group-item-action:hover, .list-group-item-whitea80.list-group-item-action:focus {
+  color: rgba(123, 119, 116, 0.9466666667);
+  background-color: rgba(228, 228, 228, 0.976);
+}
+.list-group-item-whitea80.list-group-item-action.active {
+  color: #fff;
+  background-color: rgba(123, 119, 116, 0.9466666667);
+  border-color: rgba(123, 119, 116, 0.9466666667);
+}
+
+.list-group-item-whitea70 {
+  color: rgba(111, 106, 103, 0.8933333333);
+  background-color: rgba(255, 255, 255, 0.9466666667);
+}
+.list-group-item-whitea70.list-group-item-action:hover, .list-group-item-whitea70.list-group-item-action:focus {
+  color: rgba(111, 106, 103, 0.8933333333);
+  background-color: rgba(227, 227, 227, 0.952);
+}
+.list-group-item-whitea70.list-group-item-action.active {
+  color: #fff;
+  background-color: rgba(111, 106, 103, 0.8933333333);
+  border-color: rgba(111, 106, 103, 0.8933333333);
+}
+
 .clearfix::after {
   display: block;
   clear: both;
@@ -3685,6 +3825,20 @@ progress {
 }
 .link-dblue:hover, .link-dblue:focus {
   color: #2d2724;
+}
+
+.link-whitea80 {
+  color: #ffffffdd;
+}
+.link-whitea80:hover, .link-whitea80:focus {
+  color: rgba(255, 255, 255, 0.8933333333);
+}
+
+.link-whitea70 {
+  color: #ffffffbb;
+}
+.link-whitea70:hover, .link-whitea70:focus {
+  color: rgba(255, 255, 255, 0.7866666667);
 }
 
 .ratio {
@@ -4080,6 +4234,14 @@ progress {
 
 .border-dblue {
   border-color: #38312d !important;
+}
+
+.border-whitea80 {
+  border-color: #ffffffdd !important;
+}
+
+.border-whitea70 {
+  border-color: #ffffffbb !important;
 }
 
 .border-white {
@@ -4884,6 +5046,14 @@ progress {
   color: #38312d !important;
 }
 
+.text-whitea80 {
+  color: #ffffffdd !important;
+}
+
+.text-whitea70 {
+  color: #ffffffbb !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -4970,6 +5140,14 @@ progress {
 
 .bg-dblue {
   background-color: #38312d !important;
+}
+
+.bg-whitea80 {
+  background-color: #ffffffdd !important;
+}
+
+.bg-whitea70 {
+  background-color: #ffffffbb !important;
 }
 
 .bg-body {
@@ -8484,20 +8662,20 @@ progress {
 }
 
 .webp #top .my_bg.hero {
-  background-image: radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%), url("images/background/hero_bg_image.webp");
+  background-image: url("images/incipit/room1.jpg");
 }
 
 .no-webp #top .my_bg.hero {
-  background-image: radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%), url("images/background/hero_bg_image.jpg");
+  background-image: url("images/incipit/room1.jpg");
 }
 
 @media (min-width: 576px) {
   .webp #top .my_bg.hero {
-    background-image: radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%), url("images/background/hero_bg_image.webp");
+    background-image: url("images/incipit/room1.jpg");
   }
 
   .no-webp #top .my_bg.hero {
-    background-image: radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%), url("images/background/hero_bg_image.jpg");
+    background-image: url("images/incipit/room1.jpg");
   }
 }
 .bg_2nd {

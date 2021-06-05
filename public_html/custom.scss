@@ -36,6 +36,8 @@ $bpurple: $nijiblack;
 $black: $nijiblack;
 // $blue: #166d71;
 $dblue: $nijiblack;
+$whitea80: #ffffffdd;
+$whitea70: #ffffffbb;
 $custom-theme-colors:(
 //     "pink": $pink,
 //     "purple": $purple,
@@ -46,7 +48,9 @@ $custom-theme-colors:(
     "bpurple": $bpurple,
 //     "orange": $orange,
 //     "blue": $blue,
-    "dblue": $dblue
+    "dblue": $dblue,
+    "whitea80": $whitea80,
+    "whitea70": $whitea70
 );
 
 // $card-border-radius: $border-radius-lg;
@@ -159,21 +163,25 @@ $nijigray-900: shade-color($nijigray, 80%) !default;
     background-position: 35% center;
 }
 .webp #top .my_bg.hero{
-    background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.webp");
+    // background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.webp");
+    background-image: url("images/incipit/room1.jpg");
 }
 .no-webp #top .my_bg.hero{
-    background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.jpg");
+    // background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.jpg");
+    background-image: url("images/incipit/room1.jpg");
 }
 @media (min-width: 576px) {
     .webp #top .my_bg.hero{
-        background-image:
-        radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
-        url("images/background/hero_bg_image.webp");
+        // background-image:
+        // radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
+        // url("images/background/hero_bg_image.webp");
+        background-image: url("images/incipit/room1.jpg");
     }
     .no-webp #top .my_bg.hero{
-        background-image:
-        radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
-        url("images/background/hero_bg_image.jpg");
+        // background-image:
+        // radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
+        // url("images/background/hero_bg_image.jpg");
+        background-image: url("images/incipit/room1.jpg");
     }
 }
 $alpha_k: -0.7;
