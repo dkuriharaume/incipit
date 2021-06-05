@@ -8,9 +8,9 @@ $navbar-padding-x: 1rem;
 $custom-diplay-font-sizes:(
     7: 2rem
 );
-$btn-font-size-lg: 2rem;
-$border-radius-lg: 2rem;
-$btn-font-weight: 600;
+// $btn-font-size-lg: 2rem;
+// $border-radius-lg: 2rem;
+// $btn-font-weight: 600;
 // $linkey-red: #A92C3D;
 $nijigray: #baada8;
 $nijigray-mid: #f2ece9;
@@ -74,10 +74,25 @@ $small-font-size: .7em;
 // scss-docs-start import-stack
 // Configuration
 @import "scss/functions";
+
 @import "scss/variables";
 $display-font-sizes: map-merge($display-font-sizes, $custom-diplay-font-sizes);
 $colors: map-merge($colors, $custom-colors);
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$h2-font-size: $font-size-base * 1.5;
+$custom-spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 8
+);
+$spacers: map-merge($spacers, $custom-spacers);
+$btn-border-radius: 0;
+$btn-padding-y: 1rem;
 @import "scss/mixins";
 @import "scss/utilities";
 
@@ -288,4 +303,36 @@ $ap0: color.adjust($pink, $alpha: -1);
 }
 .font-serif{
     font-family: $font-family-serif;
+}
+
+$offset-base: 3rem;
+.offset-left{
+    position: relative;
+    left: -$offset-base;
+}
+.offset-right{
+    position: relative;
+    left: $offset-base;
+}
+.offset-top{
+    position: relative;
+    top: -$offset-base;
+}
+.z-back{
+    z-index: -1;
+}
+
+.card-title{
+    position: relative;
+    top: 2rem;
+}
+h2{
+    font-family: $font-family-serif;
+    font-weight: 600;
+}
+p{
+    line-height: 250%;
+}
+.btn{
+    color:white;
 }
