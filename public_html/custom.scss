@@ -1,45 +1,56 @@
 @use "sass:color";
-// $primary: #A92C3D;
+
 $link-decoration: none;
-$font-family-sans-serif: /*"Helvetica Neue", Arial,*/ "Hiragino Sans", Meiryo, sans-serif;
+$font-family-sans-serif: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$font-family-serif: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 $navbar-padding-x: 1rem;
-$display-font-weight: 800;
+// $display-font-weight: 800;
 $custom-diplay-font-sizes:(
     7: 2rem
 );
 $btn-font-size-lg: 2rem;
 $border-radius-lg: 2rem;
 $btn-font-weight: 600;
-$linkey-red: #A92C3D;
-// $linkey-red:black;
-$custom-colors: ("linkey_red": $linkey-red);
-$primary: $linkey-red;
-$pink:#D66792;
-$orange: #E06147;
-$dpurple: #391047;
-$secondary: #787978;
-$purple: #8d3070;
-$dred: #4F0711;
-$red: #C54742;
-$cardinal: #8C0013;
-$bpurple: #391047;
-$black: $primary;
-$blue: #166d71;
-$dblue: #003049;
+// $linkey-red: #A92C3D;
+$nijigray: #baada8;
+$nijigray-mid: #f2ece9;
+$nijigray-pale: #faf7f5;
+$nijiblack: #38312d;
+// $custom-colors: ("linkey_red": $linkey-red);
+$custom-colors: (
+    "nijigray": $nijigray,
+    "nijigray-mid": $nijigray-mid,
+    "nijigray-pale": $nijigray-pale
+);
+// $primary: $linkey-red;
+$primary: $nijigray;
+// $pink:#D66792;
+// $orange: #E06147;
+$dpurple: $nijiblack;
+$secondary: $nijigray-mid;
+// $purple: #8d3070;
+$dred: $nijiblack;
+// $red: #C54742;
+$cardinal: $nijiblack;
+$bpurple: $nijiblack;
+$black: $nijiblack;
+// $blue: #166d71;
+$dblue: $nijiblack;
 $custom-theme-colors:(
-    "pink": $pink,
-    "purple": $purple,
+//     "pink": $pink,
+//     "purple": $purple,
     "dpurple": $dpurple,
-    "dred": $dred,
-    "red": $red,
+//     "dred": $dred,
+//     "red": $red,
     "cardinal": $cardinal,
     "bpurple": $bpurple,
-    "orange": $orange,
-    "blue": $blue,
+//     "orange": $orange,
+//     "blue": $blue,
     "dblue": $dblue
 );
 
-$card-border-radius: $border-radius-lg;
+// $card-border-radius: $border-radius-lg;
+$card-border-radius: none;
 $card-space-multiplier: 2;
 $card-spacer-y: $card-space-multiplier * 1rem;
 $card-spacer-x: $card-space-multiplier * 1rem;
@@ -104,15 +115,26 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 @import "scss/utilities/api";
 // scss-docs-end import-stack
 
-$linkey-red-100: tint-color($linkey-red, 80%) !default;
-$linkey-red-200: tint-color($linkey-red, 60%) !default;
-$linkey-red-300: tint-color($linkey-red, 40%) !default;
-$linkey-red-400: tint-color($linkey-red, 20%) !default;
-$linkey-red-500: $linkey-red !default;
-$linkey-red-600: shade-color($linkey-red, 20%) !default;
-$linkey-red-700: shade-color($linkey-red, 40%) !default;
-$linkey-red-800: shade-color($linkey-red, 60%) !default;
-$linkey-red-900: shade-color($linkey-red, 80%) !default;
+// $linkey-red-100: tint-color($linkey-red, 80%) !default;
+// $linkey-red-200: tint-color($linkey-red, 60%) !default;
+// $linkey-red-300: tint-color($linkey-red, 40%) !default;
+// $linkey-red-400: tint-color($linkey-red, 20%) !default;
+// $linkey-red-500: $linkey-red !default;
+// $linkey-red-600: shade-color($linkey-red, 20%) !default;
+// $linkey-red-700: shade-color($linkey-red, 40%) !default;
+// $linkey-red-800: shade-color($linkey-red, 60%) !default;
+// $linkey-red-900: shade-color($linkey-red, 80%) !default;
+
+$nijigray-100: tint-color($nijigray, 80%) !default;
+$nijigray-200: tint-color($nijigray, 60%) !default;
+$nijigray-300: tint-color($nijigray, 40%) !default;
+$nijigray-400: tint-color($nijigray, 20%) !default;
+$nijigray-500: $nijigray !default;
+$nijigray-600: shade-color($nijigray, 20%) !default;
+$nijigray-700: shade-color($nijigray, 40%) !default;
+$nijigray-800: shade-color($nijigray, 60%) !default;
+$nijigray-900: shade-color($nijigray, 80%) !default;
+
 
 .custom_element{
     color: tint-color($primary, 80%);
@@ -221,7 +243,7 @@ $ap0: color.adjust($pink, $alpha: -1);
     background-color: $red-100;
 }
 .bg-primary-100{
-    background-color: $linkey-red-100;
+    background-color: $nijigray-100;
 }
 .img-fit{
     width: 100%;
@@ -251,4 +273,11 @@ $ap0: color.adjust($pink, $alpha: -1);
     white-space: nowrap;
     overflow-x: auto; 
     -webkit-overflow-scrolling: touch;
+}
+
+.font-sans-serif{
+    font-family: $font-family-sans-serif;
+}
+.font-serif{
+    font-family: $font-family-serif;
 }
