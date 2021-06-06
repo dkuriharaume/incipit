@@ -1,4 +1,4 @@
-$('body').css('padding-top', $('#smartScroll_hidden').outerHeight() + 'px');
+// $('body').css('padding-top', $('#smartScroll_hidden').outerHeight() + 'px');
 
 if ($('.smart-scroll').length > 0) { // check if element exists
     var last_scroll_top = 0;

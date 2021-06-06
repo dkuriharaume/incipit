@@ -4,68 +4,32 @@ $link-decoration: none;
 $font-family-sans-serif: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 $font-family-serif: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 $navbar-padding-x: 1rem;
-// $display-font-weight: 800;
-$custom-diplay-font-sizes:(
-    7: 2rem
-);
-// $btn-font-size-lg: 2rem;
-// $border-radius-lg: 2rem;
-// $btn-font-weight: 600;
-// $linkey-red: #A92C3D;
+
 $nijigray: #baada8;
 $nijigray-mid: #f2ece9;
 $nijigray-pale: #faf7f5;
 $nijiblack: #38312d;
-// $custom-colors: ("linkey_red": $linkey-red);
 $custom-colors: (
     "nijigray": $nijigray,
     "nijigray-mid": $nijigray-mid,
     "nijigray-pale": $nijigray-pale
 );
-// $primary: $linkey-red;
+
 $primary: $nijigray;
-// $pink:#D66792;
-// $orange: #E06147;
-$dpurple: $nijiblack;
 $secondary: $nijigray-mid;
-// $purple: #8d3070;
-$dred: $nijiblack;
-// $red: #C54742;
-$cardinal: $nijiblack;
-$bpurple: $nijiblack;
 $black: $nijiblack;
-// $blue: #166d71;
-$dblue: $nijiblack;
+
 $whitea80: #ffffffdd;
 $whitea70: #ffffffbb;
 $pale: $nijigray-pale;
+
 $custom-theme-colors:(
-//     "pink": $pink,
-//     "purple": $purple,
-    "dpurple": $dpurple,
-//     "dred": $dred,
-//     "red": $red,
-    "cardinal": $cardinal,
-    "bpurple": $bpurple,
-//     "orange": $orange,
-//     "blue": $blue,
-    "dblue": $dblue,
     "whitea80": $whitea80,
     "whitea70": $whitea70,
     "pale": $pale
 );
 
-// $card-border-radius: $border-radius-lg;
-$card-border-radius: none;
-$card-space-multiplier: 2;
-$card-spacer-y: $card-space-multiplier * 1rem;
-$card-spacer-x: $card-space-multiplier * 1rem;
-$card-cap-bg: none;
-$card-border-color: #ffffff;
 
-$text-muted: rgba($secondary, .75);
-$list-group-bg: none;
-$small-font-size: .7em;
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -78,7 +42,6 @@ $small-font-size: .7em;
 @import "scss/functions";
 
 @import "scss/variables";
-$display-font-sizes: map-merge($display-font-sizes, $custom-diplay-font-sizes);
 $colors: map-merge($colors, $custom-colors);
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $h2-font-size: $font-size-base * 1.5;
@@ -99,6 +62,7 @@ $input-border-radius: 0;
 $input-border-color: $primary;
 $form-select-border-radius: 0;
 $form-select-border-color: $primary;
+
 @import "scss/mixins";
 @import "scss/utilities";
 
@@ -140,16 +104,6 @@ $form-select-border-color: $primary;
 @import "scss/utilities/api";
 // scss-docs-end import-stack
 
-// $linkey-red-100: tint-color($linkey-red, 80%) !default;
-// $linkey-red-200: tint-color($linkey-red, 60%) !default;
-// $linkey-red-300: tint-color($linkey-red, 40%) !default;
-// $linkey-red-400: tint-color($linkey-red, 20%) !default;
-// $linkey-red-500: $linkey-red !default;
-// $linkey-red-600: shade-color($linkey-red, 20%) !default;
-// $linkey-red-700: shade-color($linkey-red, 40%) !default;
-// $linkey-red-800: shade-color($linkey-red, 60%) !default;
-// $linkey-red-900: shade-color($linkey-red, 80%) !default;
-
 $nijigray-100: tint-color($nijigray, 80%) !default;
 $nijigray-200: tint-color($nijigray, 60%) !default;
 $nijigray-300: tint-color($nijigray, 40%) !default;
@@ -161,13 +115,8 @@ $nijigray-800: shade-color($nijigray, 60%) !default;
 $nijigray-900: shade-color($nijigray, 80%) !default;
 
 
-.custom_element{
-    color: tint-color($primary, 80%);
-}
-.bg_header_3rd{
-    background: $pink-100;
-}
-#top .display-4{
+
+.text-grad{
     background:-webkit-linear-gradient(left, $pink,$primary,$orange);
     -webkit-background-clip: text;
     background-clip: text;
@@ -208,7 +157,7 @@ $nijigray-900: shade-color($nijigray, 80%) !default;
 $alpha_k: -0.7;
 $ap0: color.adjust($pink, $alpha: -1);
 
-.bg_2nd{
+.multi-grad{
     background:
     radial-gradient(circle at left 50% bottom 50%, #FFFFFF33 0%, #FFFFFF00 50%),
     radial-gradient(circle at left 50% bottom 0%, color.adjust($pink, $alpha: $alpha_k) 0%, $ap0 80%),
@@ -219,61 +168,14 @@ $ap0: color.adjust($pink, $alpha: -1);
 .bg_grad_primary_orange{
     background:radial-gradient(circle at left 0% bottom 50%, $orange 0%, $primary 130%);
 }
-.grad_pink_main{
+.text_grad_pink_main{
     background:-webkit-linear-gradient(left, $pink 0%, $primary 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.grad_dpurple_main{
-    background:-webkit-linear-gradient($dpurple 0%, $primary 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grad_orange_main{
-    background:-webkit-linear-gradient(left, $orange 0%, $primary 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.bg_linkey_points{
-    background: url("images/icon/icon_linkey.svg"),
-    linear-gradient($pink 0%, $primary 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.card-img.right{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.card-header.left{
-    border-top-right-radius: 0;
-}
-.card-img.left{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.card-header.right{
-    border-top-left-radius: 0;
-}
-.bg_finelife{
-    background-color: $purple-100;
-    border-radius: 30px;
-}
-.op-75{
-    opacity: 75%;
-}
-.bg-orange-100{
-    background-color: $orange-100;
-}
-.bg-red-100{
-    background-color: $red-100;
-}
-.bg-primary-100{
-    background-color: $nijigray-100;
-}
+
+
 .img-fit{
     width: 100%;
     height: 100%;
