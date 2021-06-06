@@ -38,6 +38,7 @@ $black: $nijiblack;
 $dblue: $nijiblack;
 $whitea80: #ffffffdd;
 $whitea70: #ffffffbb;
+$pale: $nijigray-pale;
 $custom-theme-colors:(
 //     "pink": $pink,
 //     "purple": $purple,
@@ -50,7 +51,8 @@ $custom-theme-colors:(
 //     "blue": $blue,
     "dblue": $dblue,
     "whitea80": $whitea80,
-    "whitea70": $whitea70
+    "whitea70": $whitea70,
+    "pale": $pale
 );
 
 // $card-border-radius: $border-radius-lg;
