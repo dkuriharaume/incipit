@@ -95,6 +95,10 @@ $custom-spacers: (
 $spacers: map-merge($spacers, $custom-spacers);
 $btn-border-radius: 0;
 $btn-padding-y: 1rem;
+$input-border-radius: 0;
+$input-border-color: $primary;
+$form-select-border-radius: 0;
+$form-select-border-color: $primary;
 @import "scss/mixins";
 @import "scss/utilities";
 
@@ -106,10 +110,10 @@ $btn-padding-y: 1rem;
 @import "scss/containers";
 @import "scss/grid";
 // @import "scss/tables";
-// @import "scss/forms";
+@import "scss/forms";
 @import "scss/buttons";
 @import "scss/transitions";
-// @import "scss/dropdown";
+@import "scss/dropdown";
 // @import "scss/button-group";
 @import "scss/nav";
 @import "scss/navbar";
@@ -117,7 +121,7 @@ $btn-padding-y: 1rem;
 // @import "scss/accordion";
 // @import "scss/breadcrumb";
 // @import "scss/pagination";
-// @import "scss/badge";
+@import "scss/badge";
 // @import "scss/alert";
 // @import "scss/progress";
 @import "scss/list-group";
@@ -341,4 +345,7 @@ p{
 }
 .btn{
     color:white;
+}
+::selection{
+    background: $secondary;
 }
