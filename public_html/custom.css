@@ -9662,6 +9662,11 @@ progress {
   top: -3rem;
 }
 
+.offset-top-half {
+  position: relative;
+  top: -2rem;
+}
+
 .z-back {
   z-index: -1;
 }

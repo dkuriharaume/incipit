@@ -320,6 +320,10 @@ $offset-base: 3rem;
     position: relative;
     top: -$offset-base;
 }
+.offset-top-half{
+    position: relative;
+    top: -$offset-base/1.5;
+}
 .z-back{
     z-index: -1;
 }
