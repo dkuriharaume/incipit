@@ -21,6 +21,8 @@
 </head>
 
 <body id="top">
+    <script src="inview.js"></script>
+    <script src="smartScroll.js"></script>
     <!-- Facebook -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v10.0"
@@ -61,23 +63,24 @@
         </section>
         <section id="about">
             <!-- About incipit-->
-            <div class="container-fluid">
-                <div class="row my-6 justify-content-center align-items-center">
+            <div class="container py-6">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-4 offset-right">
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
-                                <h2 class = "text-black card-title inViewFade">incipit保育園とは</h2>
+                                
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row">
-                            <div class="col bg-secondary text-black pt-5 pb-4 px-5">
+                            <div class="col bg-secondary text-black pt-0 pb-4 px-5">
+                                <h2 class = "text-black inViewFade offset-heading">incipit保育園とは</h2>
                                 <p class = "inViewFade">incipit（インキピット）とはラテン語で「〜からの始まり」という意味があります。小規模保育園は子どもたちが初めて親元から離れて会に触れる第一歩です。<br>その最初の一歩を一緒に踏み出すための施設でありたいと願っています。
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6 d-grid ms-auto">
-                                <button role="button" class="btn-primary btn offset-top inViewFade">もっと見る</button>
+                        <div class="row" style="position:relative;">
+                            <div class="col ms-auto">
+                                <button role="button" class="btn-primary btn offset-button inViewFade">もっと見る</button>
                             </div>
                         </div>
                     </div>
@@ -280,8 +283,6 @@
     <!-- Bootstrap js-->
     <script src="bootstrap.bundle.min.js"></script>
     <!-- Custom -->
-    <script src="smartScroll.js"></script>
-    <script src="inview.js"></script>
     <script src="form_validation.js"></script>
 </body>
 

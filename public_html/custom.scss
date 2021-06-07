@@ -222,13 +222,31 @@ $offset-base: 3rem;
     position: relative;
     left: $offset-base;
 }
-.offset-top{
+.offset-up{
     position: relative;
     top: -$offset-base;
 }
-.offset-top-half{
+.offset-up-half{
     position: relative;
     top: -$offset-base/1.5;
+}
+.offset-button{
+    position: absolute;
+    top: -1.5rem;
+    left:60%;
+}
+.offset-heading{
+    position: relative;
+    top: -.7rem;
+    left: -1rem;
+}
+.offset-down{
+    position: relative;
+    top: $offset-base;
+}
+.offset-down-half{
+    position: relative;
+    top: $offset-base/1.5;
 }
 .z-back{
     z-index: -1;
@@ -247,6 +265,8 @@ p{
 }
 .btn{
     color:white;
+    text-justify: center;
+    width: 14vw;
 }
 ::selection{
     background: $secondary;

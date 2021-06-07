@@ -10236,14 +10236,36 @@ textarea.form-control-lg {
   left: 3rem;
 }
 
-.offset-top {
+.offset-up {
   position: relative;
   top: -3rem;
 }
 
-.offset-top-half {
+.offset-up-half {
   position: relative;
   top: -2rem;
+}
+
+.offset-button {
+  position: absolute;
+  top: -1.5rem;
+  left: 60%;
+}
+
+.offset-heading {
+  position: relative;
+  top: -0.7rem;
+  left: -1rem;
+}
+
+.offset-down {
+  position: relative;
+  top: 3rem;
+}
+
+.offset-down-half {
+  position: relative;
+  top: 2rem;
 }
 
 .z-back {
@@ -10266,6 +10288,8 @@ p {
 
 .btn {
   color: white;
+  text-justify: center;
+  width: 14vw;
 }
 
 ::selection {
