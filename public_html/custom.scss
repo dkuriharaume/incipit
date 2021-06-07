@@ -9,6 +9,10 @@ $nijigray: #baada8;
 $nijigray-mid: #f2ece9;
 $nijigray-pale: #faf7f5;
 $nijiblack: #38312d;
+$nijiblack-mild:#38312dcc;
+$wasurenakusa:#92AFE4;
+$toki:#F3A696;
+$kihada:#FEF263;
 $custom-colors: (
     "nijigray": $nijigray,
     "nijigray-mid": $nijigray-mid,
@@ -17,6 +21,9 @@ $custom-colors: (
 
 $primary: $nijigray;
 $secondary: $nijigray-mid;
+$blue: $wasurenakusa;
+$red: $toki;
+$yellow: $kihada;
 $black: $nijiblack;
 
 $whitea80: #ffffffdd;
@@ -154,19 +161,39 @@ $nijigray-900: shade-color($nijigray, 80%) !default;
         background-image: url("images/incipit/room1.jpg");
     }
 }
-$alpha_k: -0.7;
-$ap0: color.adjust($pink, $alpha: -1);
+$alpha_k: -0.8;
+$ap0: color.adjust($nijigray-pale, $alpha: -1);
 
 .multi-grad{
     background:
-    radial-gradient(circle at left 50% bottom 50%, #FFFFFF33 0%, #FFFFFF00 50%),
-    radial-gradient(circle at left 50% bottom 0%, color.adjust($pink, $alpha: $alpha_k) 0%, $ap0 80%),
-    radial-gradient(circle at left 0% top 50%, color.adjust($orange, $alpha: $alpha_k) 0%, $ap0 80%),
-    radial-gradient(circle at right 0% top 0%, color.adjust($indigo, $alpha: $alpha_k) 0%, $ap0 80%);
-    background-color: $primary;
+    // radial-gradient(circle at left 50% bottom 50%, #FFFFFF33 0%, #FFFFFF00 50%),
+    radial-gradient(circle at left 50% bottom 0%, color.adjust($red, $alpha: $alpha_k) 0%, $ap0 80%),
+    radial-gradient(circle at left 0% top 50%, color.adjust($yellow, $alpha: $alpha_k) 0%, $ap0 80%),
+    radial-gradient(circle at right 0% top 0%, color.adjust($blue, $alpha: $alpha_k) 0%, $ap0 80%);
+    background-color: $nijigray-pale;
 }
+.multi-grad2{
+    background:
+    // radial-gradient(circle at left 50% bottom 50%, #FFFFFF33 0%, #FFFFFF00 50%),
+    radial-gradient(circle at left 50% bottom 0%, $red-100 0%, $nijigray-pale 80%),
+    radial-gradient(circle at left 0% top 50%, $yellow-100 0%, $nijigray-pale 80%),
+    radial-gradient(circle at right 0% top 0%, $blue-100 0%, $nijigray-pale 80%);
+}
+
 .bg_grad_primary_orange{
     background:radial-gradient(circle at left 0% bottom 50%, $orange 0%, $primary 130%);
+}
+.bg_grad_red{
+    background:radial-gradient(circle at left 0% top 0%, $red-200 -30%, $secondary 70%);
+}
+.bg_grad_yellow{
+    background:radial-gradient(circle at left 50% top 0%, $yellow -30%, $secondary 70%);
+}
+.bg_grad_yellow_pale{
+    background:radial-gradient(circle at left 50% top 0%, $yellow-100 -30%, $nijigray-pale 70%);
+}
+.bg_grad_blue{
+    background:radial-gradient(circle at left 100% top 100%, $blue-200 -30%, $secondary 70%);
 }
 .text_grad_pink_main{
     background:-webkit-linear-gradient(left, $pink 0%, $primary 100%);
@@ -262,12 +289,18 @@ h2{
 }
 p{
     line-height: 250%;
+    color: $nijiblack-mild;
 }
 .btn{
     color:white;
     text-justify: center;
+}
+.btn.short{
     width: 14vw;
 }
 ::selection{
-    background: $secondary;
+    background: $primary;
+}
+textarea{
+    resize:none;
 }
