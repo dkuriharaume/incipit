@@ -28,12 +28,14 @@ $black: $nijiblack;
 
 $whitea80: #ffffffdd;
 $whitea70: #ffffffbb;
+$secondarya70: color.adjust($secondary, $alpha: -.3);
 $pale: $nijigray-pale;
 
 $custom-theme-colors:(
     "whitea80": $whitea80,
     "whitea70": $whitea70,
-    "pale": $pale
+    "pale": $pale,
+    "secondarya70": $secondarya70
 );
 
 
@@ -241,13 +243,26 @@ $ap0: color.adjust($nijigray-pale, $alpha: -1);
 }
 
 $offset-base: 3rem;
-.offset-left{
-    position: relative;
-    left: -$offset-base;
+// .offset-left{
+//     position: relative;
+//     left: -$offset-base;
+// }
+@include media-breakpoint-up(sm) {
+    .offset-left{
+        position: relative;
+        left: -$offset-base;
+    }
 }
-.offset-right{
-    position: relative;
-    left: $offset-base;
+
+
+// .offset-right{
+//     position:static;
+// }
+@include media-breakpoint-up(sm) {
+    .offset-right{
+        position: relative;
+        left: $offset-base;
+    }
 }
 .offset-up{
     position: relative;
@@ -257,10 +272,22 @@ $offset-base: 3rem;
     position: relative;
     top: -$offset-base/1.5;
 }
-.offset-button{
-    position: absolute;
-    top: -1.5rem;
-    left:60%;
+#about .offset-button{
+    position: relative;
+    top: -1rem;
+}
+@include media-breakpoint-up(sm) {
+    #about .offset-button{
+        position: absolute;
+        top: -1.5rem;
+        left:60%;
+    }
+
+    .offset-button{
+        position: absolute;
+        top: -1.5rem;
+        left:60%;
+    }
 }
 .offset-heading{
     position: relative;
@@ -296,7 +323,27 @@ p{
     text-justify: center;
 }
 .btn.short{
-    width: 14vw;
+    width: 70vw;
+}
+#other .btn.short{
+    width:100%
+}
+
+@include media-breakpoint-up(sm) {
+    .btn.short{
+        width: 25vw;
+    }
+    #other .btn.short{
+        width: 25vw;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .btn.short{
+        width: 12vw;
+    }
+    #other .btn.short{
+        width: 12vw;
+    }
 }
 ::selection{
     background: $primary;
@@ -304,3 +351,7 @@ p{
 textarea{
     resize:none;
 }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+// @include media-breakpoint-up(xxl) { ... }

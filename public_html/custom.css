@@ -33,6 +33,7 @@
   --bs-whitea80: #ffffffdd;
   --bs-whitea70: #ffffffbb;
   --bs-pale: #faf7f5;
+  --bs-secondarya70: rgba(242, 236, 233, 0.7);
   --bs-font-sans-serif: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3001,6 +3002,36 @@ textarea.form-control-lg {
   border-color: #faf7f5;
 }
 
+.btn-secondarya70 {
+  color: #38312d;
+  background-color: rgba(242, 236, 233, 0.7);
+  border-color: rgba(242, 236, 233, 0.7);
+}
+.btn-secondarya70:hover {
+  color: #38312d;
+  background-color: rgba(245, 241, 238, 0.745);
+  border-color: rgba(244, 239, 237, 0.73);
+}
+.btn-check:focus + .btn-secondarya70, .btn-secondarya70:focus {
+  color: #38312d;
+  background-color: rgba(245, 241, 238, 0.745);
+  border-color: rgba(244, 239, 237, 0.73);
+  box-shadow: 0 0 0 0.25rem rgba(196, 190, 187, 0.5);
+}
+.btn-check:checked + .btn-secondarya70, .btn-check:active + .btn-secondarya70, .btn-secondarya70:active, .btn-secondarya70.active, .show > .btn-secondarya70.dropdown-toggle {
+  color: #38312d;
+  background-color: rgba(246, 242, 240, 0.76);
+  border-color: rgba(244, 239, 237, 0.73);
+}
+.btn-check:checked + .btn-secondarya70:focus, .btn-check:active + .btn-secondarya70:focus, .btn-secondarya70:active:focus, .btn-secondarya70.active:focus, .show > .btn-secondarya70.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(196, 190, 187, 0.5);
+}
+.btn-secondarya70:disabled, .btn-secondarya70.disabled {
+  color: #38312d;
+  background-color: rgba(242, 236, 233, 0.7);
+  border-color: rgba(242, 236, 233, 0.7);
+}
+
 .btn-outline-primary {
   color: #baada8;
   border-color: #baada8;
@@ -3273,6 +3304,31 @@ textarea.form-control-lg {
 }
 .btn-outline-pale:disabled, .btn-outline-pale.disabled {
   color: #faf7f5;
+  background-color: transparent;
+}
+
+.btn-outline-secondarya70 {
+  color: rgba(242, 236, 233, 0.7);
+  border-color: rgba(242, 236, 233, 0.7);
+}
+.btn-outline-secondarya70:hover {
+  color: #38312d;
+  background-color: rgba(242, 236, 233, 0.7);
+  border-color: rgba(242, 236, 233, 0.7);
+}
+.btn-check:focus + .btn-outline-secondarya70, .btn-outline-secondarya70:focus {
+  box-shadow: 0 0 0 0.25rem rgba(242, 236, 233, 0.5);
+}
+.btn-check:checked + .btn-outline-secondarya70, .btn-check:active + .btn-outline-secondarya70, .btn-outline-secondarya70:active, .btn-outline-secondarya70.active, .btn-outline-secondarya70.dropdown-toggle.show {
+  color: #38312d;
+  background-color: rgba(242, 236, 233, 0.7);
+  border-color: rgba(242, 236, 233, 0.7);
+}
+.btn-check:checked + .btn-outline-secondarya70:focus, .btn-check:active + .btn-outline-secondarya70:focus, .btn-outline-secondarya70:active:focus, .btn-outline-secondarya70.active:focus, .btn-outline-secondarya70.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(242, 236, 233, 0.5);
+}
+.btn-outline-secondarya70:disabled, .btn-outline-secondarya70.disabled {
+  color: rgba(242, 236, 233, 0.7);
   background-color: transparent;
 }
 
@@ -4525,6 +4581,20 @@ textarea.form-control-lg {
   border-color: #86807d;
 }
 
+.list-group-item-secondarya70 {
+  color: rgba(105, 98, 95, 0.88);
+  background-color: rgba(253, 253, 252, 0.94);
+}
+.list-group-item-secondarya70.list-group-item-action:hover, .list-group-item-secondarya70.list-group-item-action:focus {
+  color: rgba(105, 98, 95, 0.88);
+  background-color: rgba(225, 225, 224, 0.946);
+}
+.list-group-item-secondarya70.list-group-item-action.active {
+  color: #fff;
+  background-color: rgba(105, 98, 95, 0.88);
+  border-color: rgba(105, 98, 95, 0.88);
+}
+
 .clearfix::after {
   display: block;
   clear: both;
@@ -4606,6 +4676,13 @@ textarea.form-control-lg {
 }
 .link-pale:hover, .link-pale:focus {
   color: #fbf9f7;
+}
+
+.link-secondarya70 {
+  color: rgba(242, 236, 233, 0.7);
+}
+.link-secondarya70:hover, .link-secondarya70:focus {
+  color: rgba(246, 242, 240, 0.76);
 }
 
 .ratio {
@@ -4997,6 +5074,10 @@ textarea.form-control-lg {
 
 .border-pale {
   border-color: #faf7f5 !important;
+}
+
+.border-secondarya70 {
+  border-color: rgba(242, 236, 233, 0.7) !important;
 }
 
 .border-white {
@@ -5925,6 +6006,10 @@ textarea.form-control-lg {
   color: #faf7f5 !important;
 }
 
+.text-secondarya70 {
+  color: rgba(242, 236, 233, 0.7) !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -6007,6 +6092,10 @@ textarea.form-control-lg {
 
 .bg-pale {
   background-color: #faf7f5 !important;
+}
+
+.bg-secondarya70 {
+  background-color: rgba(242, 236, 233, 0.7) !important;
 }
 
 .bg-body {
@@ -10246,16 +10335,18 @@ textarea.form-control-lg {
   font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
-.offset-left {
-  position: relative;
-  left: -3rem;
+@media (min-width: 576px) {
+  .offset-left {
+    position: relative;
+    left: -3rem;
+  }
 }
-
-.offset-right {
-  position: relative;
-  left: 3rem;
+@media (min-width: 576px) {
+  .offset-right {
+    position: relative;
+    left: 3rem;
+  }
 }
-
 .offset-up {
   position: relative;
   top: -3rem;
@@ -10266,12 +10357,24 @@ textarea.form-control-lg {
   top: -2rem;
 }
 
-.offset-button {
-  position: absolute;
-  top: -1.5rem;
-  left: 60%;
+#about .offset-button {
+  position: relative;
+  top: -1rem;
 }
 
+@media (min-width: 576px) {
+  #about .offset-button {
+    position: absolute;
+    top: -1.5rem;
+    left: 60%;
+  }
+
+  .offset-button {
+    position: absolute;
+    top: -1.5rem;
+    left: 60%;
+  }
+}
 .offset-heading {
   position: relative;
   top: -0.7rem;
@@ -10313,9 +10416,31 @@ p {
 }
 
 .btn.short {
-  width: 14vw;
+  width: 70vw;
 }
 
+#other .btn.short {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .btn.short {
+    width: 25vw;
+  }
+
+  #other .btn.short {
+    width: 25vw;
+  }
+}
+@media (min-width: 992px) {
+  .btn.short {
+    width: 12vw;
+  }
+
+  #other .btn.short {
+    width: 12vw;
+  }
+}
 ::selection {
   background: #baada8;
 }
