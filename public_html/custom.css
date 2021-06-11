@@ -87,11 +87,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.305rem + 0.66vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -105,12 +105,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 1.75rem;
-  }
+  font-size: 1.2rem;
 }
 
 h4, .h4 {
@@ -10275,8 +10270,12 @@ textarea.form-control-lg {
   background: radial-gradient(circle at left 0% top 0%, #fadbd5 -30%, #f2ece9 70%);
 }
 
+.bg_grad_red_pale {
+  background: radial-gradient(circle at left 0% top 0%, #fadbd5 -30%, #faf7f5 70%);
+}
+
 .bg_grad_yellow {
-  background: radial-gradient(circle at left 50% top 0%, #FEF263 -30%, #f2ece9 70%);
+  background: radial-gradient(circle at left 50% top 0%, #fffac1 -30%, #f2ece9 70%);
 }
 
 .bg_grad_yellow_pale {
@@ -10285,6 +10284,10 @@ textarea.form-control-lg {
 
 .bg_grad_blue {
   background: radial-gradient(circle at left 100% top 100%, #d3dff4 -30%, #f2ece9 70%);
+}
+
+.bg_grad_blue_pale {
+  background: radial-gradient(circle at left 100% top 100%, #e9effa -30%, #faf7f5 70%);
 }
 
 .text_grad_pink_main {
@@ -10400,7 +10403,17 @@ textarea.form-control-lg {
   top: 2rem;
 }
 
+h1, .h1 {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-weight: 600;
+}
+
 h2, .h2 {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-weight: 600;
+}
+
+h3, .h3 {
   font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   font-weight: 600;
 }
@@ -10416,29 +10429,29 @@ p {
 }
 
 .btn.short {
-  width: 70vw;
+  min-width: 70vw;
 }
 
 #other .btn.short {
-  width: 100%;
+  min-width: 100%;
 }
 
 @media (min-width: 576px) {
   .btn.short {
-    width: 25vw;
+    min-width: 25vw;
   }
 
   #other .btn.short {
-    width: 25vw;
+    min-width: 25vw;
   }
 }
 @media (min-width: 992px) {
   .btn.short {
-    width: 12vw;
+    min-width: 12vw;
   }
 
   #other .btn.short {
-    width: 12vw;
+    min-width: 12vw;
   }
 }
 ::selection {
@@ -10447,6 +10460,38 @@ p {
 
 textarea {
   resize: none;
+}
+
+.underbar {
+  position: relative;
+  top: -1rem;
+  height: 0.5rem;
+  width: 8rem;
+  z-index: -1;
+}
+
+#space_design .underbar {
+  z-index: auto;
+  top: inherit;
+}
+
+.underbar.yellow {
+  background-color: #FEF263;
+}
+
+.underbar.red {
+  background-color: #F3A696;
+}
+
+.underbar.blue {
+  background-color: #92AFE4;
+}
+
+@media (min-width: 992px) {
+  #philosophy {
+    position: relative;
+    top: -30vh;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

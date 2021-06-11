@@ -5,7 +5,8 @@ var elements = document.getElementsByClassName("inViewFade");
 
 // listen for scroll event and call animate function
 document.addEventListener('scroll', animate);
-document.addEventListener('load', animate);
+window.onload = animate;
+// document.addEventListener('open', animate);
 // document.addEventListener('resize', animate);
 
 // check if element is in view
@@ -19,7 +20,7 @@ function inView(ele) {
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = ele.getBoundingClientRect().top + scrollY + elementHeight/4;
+  var elementPosition = ele.getBoundingClientRect().top + scrollY + 50 /*+ elementHeight/4*/;
   
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {

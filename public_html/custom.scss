@@ -53,7 +53,9 @@ $custom-theme-colors:(
 @import "scss/variables";
 $colors: map-merge($colors, $custom-colors);
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$h1-font-size: $font-size-base * 1.8;
 $h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.2;
 $custom-spacers: (
   0: 0,
   1: $spacer / 4,
@@ -188,14 +190,20 @@ $ap0: color.adjust($nijigray-pale, $alpha: -1);
 .bg_grad_red{
     background:radial-gradient(circle at left 0% top 0%, $red-200 -30%, $secondary 70%);
 }
+.bg_grad_red_pale{
+    background:radial-gradient(circle at left 0% top 0%, $red-200 -30%, $nijigray-pale 70%);
+}
 .bg_grad_yellow{
-    background:radial-gradient(circle at left 50% top 0%, $yellow -30%, $secondary 70%);
+    background:radial-gradient(circle at left 50% top 0%, $yellow-200 -30%, $secondary 70%);
 }
 .bg_grad_yellow_pale{
     background:radial-gradient(circle at left 50% top 0%, $yellow-100 -30%, $nijigray-pale 70%);
 }
 .bg_grad_blue{
     background:radial-gradient(circle at left 100% top 100%, $blue-200 -30%, $secondary 70%);
+}
+.bg_grad_blue_pale{
+    background:radial-gradient(circle at left 100% top 100%, $blue-100 -30%, $nijigray-pale 70%);
 }
 .text_grad_pink_main{
     background:-webkit-linear-gradient(left, $pink 0%, $primary 100%);
@@ -310,7 +318,15 @@ $offset-base: 3rem;
     position: relative;
     top: 2rem;
 }
+h1{
+    font-family: $font-family-serif;
+    font-weight: 600;
+}
 h2{
+    font-family: $font-family-serif;
+    font-weight: 600;
+}
+h3{
     font-family: $font-family-serif;
     font-weight: 600;
 }
@@ -323,26 +339,26 @@ p{
     text-justify: center;
 }
 .btn.short{
-    width: 70vw;
+    min-width: 70vw;
 }
 #other .btn.short{
-    width:100%
+    min-width:100%
 }
 
 @include media-breakpoint-up(sm) {
     .btn.short{
-        width: 25vw;
+        min-width: 25vw;
     }
     #other .btn.short{
-        width: 25vw;
+        min-width: 25vw;
     }
 }
 @include media-breakpoint-up(lg) {
     .btn.short{
-        width: 12vw;
+        min-width: 12vw;
     }
     #other .btn.short{
-        width: 12vw;
+        min-width: 12vw;
     }
 }
 ::selection{
@@ -350,6 +366,36 @@ p{
 }
 textarea{
     resize:none;
+}
+.underbar{
+    position:relative;
+    top: -1rem;
+    height: .5rem;
+    width: 8rem;
+    z-index: -1;
+}
+#space_design .underbar{
+    z-index: auto;
+    top:inherit;
+}
+// #space_design h3{
+//     z-index: 100;
+// }
+.underbar.yellow{
+    background-color: $yellow;
+}
+.underbar.red{
+    background-color: $red;
+}
+.underbar.blue{
+    background-color: $blue;
+}
+
+@include media-breakpoint-up(lg) {
+    #philosophy{
+        position: relative;
+        top: -30vh;
+    }
 }
 // @include media-breakpoint-up(md) { ... }
 // @include media-breakpoint-up(lg) { ... }
