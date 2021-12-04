@@ -1,0 +1,403 @@
+@use "sass:color";
+
+$link-decoration: none;
+$font-family-sans-serif: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$font-family-serif: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+$navbar-padding-x: 1rem;
+
+$nijigray: #baada8;
+$nijigray-mid: #f2ece9;
+$nijigray-pale: #faf7f5;
+$nijiblack: #38312d;
+$nijiblack-mild:#38312dcc;
+$wasurenakusa:#92AFE4;
+$toki:#F3A696;
+$kihada:#FEF263;
+$custom-colors: (
+    "nijigray": $nijigray,
+    "nijigray-mid": $nijigray-mid,
+    "nijigray-pale": $nijigray-pale
+);
+
+$primary: $nijigray;
+$secondary: $nijigray-mid;
+$blue: $wasurenakusa;
+$red: $toki;
+$yellow: $kihada;
+$black: $nijiblack;
+
+$whitea80: #ffffffdd;
+$whitea70: #ffffffbb;
+$secondarya70: color.adjust($secondary, $alpha: -.3);
+$pale: $nijigray-pale;
+
+$custom-theme-colors:(
+    "whitea80": $whitea80,
+    "whitea70": $whitea70,
+    "pale": $pale,
+    "secondarya70": $secondarya70
+);
+
+
+/*!
+ * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "scss/functions";
+
+@import "scss/variables";
+$colors: map-merge($colors, $custom-colors);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$h1-font-size: $font-size-base * 1.8;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.2;
+$custom-spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 8
+);
+$spacers: map-merge($spacers, $custom-spacers);
+$btn-border-radius: 0;
+$btn-padding-y: 1rem;
+$input-border-radius: 0;
+$input-border-color: $primary;
+$form-select-border-radius: 0;
+$form-select-border-color: $primary;
+
+@import "scss/mixins";
+@import "scss/utilities";
+
+// Layout & components
+@import "scss/root";
+@import "scss/reboot";
+@import "scss/type";
+@import "scss/images";
+@import "scss/containers";
+@import "scss/grid";
+// @import "scss/tables";
+@import "scss/forms";
+@import "scss/buttons";
+@import "scss/transitions";
+@import "scss/dropdown";
+// @import "scss/button-group";
+@import "scss/nav";
+@import "scss/navbar";
+@import "scss/card";
+// @import "scss/accordion";
+// @import "scss/breadcrumb";
+// @import "scss/pagination";
+@import "scss/badge";
+// @import "scss/alert";
+// @import "scss/progress";
+@import "scss/list-group";
+// @import "scss/close";
+// @import "scss/toasts";
+// @import "scss/modal";
+// @import "scss/tooltip";
+// @import "scss/popover";
+// @import "scss/carousel";
+// @import "scss/spinners";
+
+// Helpers
+@import "scss/helpers";
+
+// Utilities
+@import "scss/utilities/api";
+// scss-docs-end import-stack
+
+$nijigray-100: tint-color($nijigray, 80%) !default;
+$nijigray-200: tint-color($nijigray, 60%) !default;
+$nijigray-300: tint-color($nijigray, 40%) !default;
+$nijigray-400: tint-color($nijigray, 20%) !default;
+$nijigray-500: $nijigray !default;
+$nijigray-600: shade-color($nijigray, 20%) !default;
+$nijigray-700: shade-color($nijigray, 40%) !default;
+$nijigray-800: shade-color($nijigray, 60%) !default;
+$nijigray-900: shade-color($nijigray, 80%) !default;
+
+
+
+.text-grad{
+    background:-webkit-linear-gradient(left, $pink,$primary,$orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 140%;
+}
+.my_bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#top .my_bg.hero{
+    height:100vh;
+    background-position: 35% center;
+}
+.webp #top .my_bg.hero{
+    // background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.webp");
+    background-image: url("images/incipit/room1.jpg");
+}
+.no-webp #top .my_bg.hero{
+    // background-image:radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%) ,url("images/background/hero_bg_image.jpg");
+    background-image: url("images/incipit/room1.jpg");
+}
+@media (min-width: 576px) {
+    .webp #top .my_bg.hero{
+        // background-image:
+        // radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
+        // url("images/background/hero_bg_image.webp");
+        background-image: url("images/incipit/room1.jpg");
+    }
+    .no-webp #top .my_bg.hero{
+        // background-image:
+        // radial-gradient(circle at left 110% top 50%, white 0%, #ffffff00 70%),
+        // url("images/background/hero_bg_image.jpg");
+        background-image: url("images/incipit/room1.jpg");
+    }
+}
+$alpha_k: -0.8;
+$ap0: color.adjust($nijigray-pale, $alpha: -1);
+
+.multi-grad{
+    background:
+    // radial-gradient(circle at left 50% bottom 50%, #FFFFFF33 0%, #FFFFFF00 50%),
+    radial-gradient(circle at left 50% bottom 0%, color.adjust($red, $alpha: $alpha_k) 0%, $ap0 80%),
+    radial-gradient(circle at left 0% top 50%, color.adjust($yellow, $alpha: $alpha_k) 0%, $ap0 80%),
+    radial-gradient(circle at right 0% top 0%, color.adjust($blue, $alpha: $alpha_k) 0%, $ap0 80%);
+    background-color: $nijigray-pale;
+}
+.multi-grad2{
+    background:
+    // radial-gradient(circle at left 50% bottom 50%, #FFFFFF33 0%, #FFFFFF00 50%),
+    radial-gradient(circle at left 50% bottom 0%, $red-100 0%, $nijigray-pale 80%),
+    radial-gradient(circle at left 0% top 50%, $yellow-100 0%, $nijigray-pale 80%),
+    radial-gradient(circle at right 0% top 0%, $blue-100 0%, $nijigray-pale 80%);
+}
+
+.bg_grad_primary_orange{
+    background:radial-gradient(circle at left 0% bottom 50%, $orange 0%, $primary 130%);
+}
+.bg_grad_red{
+    background:radial-gradient(circle at left 0% top 0%, $red-200 -30%, $secondary 70%);
+}
+.bg_grad_red_pale{
+    background:radial-gradient(circle at left 0% top 0%, $red-200 -30%, $nijigray-pale 70%);
+}
+.bg_grad_yellow{
+    background:radial-gradient(circle at left 50% top 0%, $yellow-200 -30%, $secondary 70%);
+}
+.bg_grad_yellow_pale{
+    background:radial-gradient(circle at left 50% top 0%, $yellow-100 -30%, $nijigray-pale 70%);
+}
+.bg_grad_blue{
+    background:radial-gradient(circle at left 100% top 100%, $blue-200 -30%, $secondary 70%);
+}
+.bg_grad_blue_pale{
+    background:radial-gradient(circle at left 100% top 100%, $blue-100 -30%, $nijigray-pale 70%);
+}
+.text_grad_pink_main{
+    background:-webkit-linear-gradient(left, $pink 0%, $primary 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.img-fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn{
+    box-shadow: 0px 10px 20px #00000030;
+}
+.test{
+    border: 1px solid #000000;
+}
+.navbar-brand{
+    max-width: 50vw;
+}
+@media (min-width: 768px){
+    .navbar-brand{
+        max-width: 100vw;
+    }
+}
+.navbar-nav {
+    a {
+      display: inline-block; // stops menu items from stacking
+    }
+  }
+.custom-scroll{
+    white-space: nowrap;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.font-sans-serif{
+    font-family: $font-family-sans-serif;
+}
+.font-serif{
+    font-family: $font-family-serif;
+}
+
+$offset-base: 3rem;
+// .offset-left{
+//     position: relative;
+//     left: -$offset-base;
+// }
+@include media-breakpoint-up(sm) {
+    .offset-left{
+        position: relative;
+        left: -$offset-base;
+    }
+}
+
+
+// .offset-right{
+//     position:static;
+// }
+@include media-breakpoint-up(sm) {
+    .offset-right{
+        position: relative;
+        left: $offset-base;
+    }
+}
+.offset-up{
+    position: relative;
+    top: -$offset-base;
+}
+.offset-up-half{
+    position: relative;
+    top: -$offset-base/1.5;
+}
+#about .offset-button{
+    position: relative;
+    top: -1rem;
+}
+@include media-breakpoint-up(sm) {
+    #about .offset-button{
+        position: absolute;
+        top: -1.5rem;
+        left:60%;
+    }
+
+    .offset-button{
+        position: absolute;
+        top: -1.5rem;
+        left:60%;
+    }
+}
+.offset-heading{
+    position: relative;
+    top: -.7rem;
+    left: -1rem;
+}
+.offset-down{
+    position: relative;
+    top: $offset-base;
+}
+.offset-down-half{
+    position: relative;
+    top: $offset-base/1.5;
+}
+.z-back{
+    z-index: -1;
+}
+
+.card-title{
+    position: relative;
+    top: 2rem;
+}
+h1{
+    font-family: $font-family-serif;
+    font-weight: 600;
+}
+h2{
+    font-family: $font-family-serif;
+    font-weight: 600;
+}
+h3{
+    font-family: $font-family-serif;
+    font-weight: 600;
+}
+p{
+    line-height: 250%;
+    color: $nijiblack-mild;
+}
+.btn{
+    color:white;
+    text-justify: center;
+}
+.btn.short{
+    min-width: 70vw;
+}
+#other .btn.short{
+    min-width:100%
+}
+
+@include media-breakpoint-up(sm) {
+    .btn.short{
+        min-width: 25vw;
+    }
+    #other .btn.short{
+        min-width: 25vw;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .btn.short{
+        min-width: 12vw;
+    }
+    #other .btn.short{
+        min-width: 12vw;
+    }
+}
+::selection{
+    background: $primary;
+}
+textarea{
+    resize:none;
+}
+.underbar{
+    position:relative;
+    top: -1rem;
+    height: .5rem;
+    width: 8rem;
+    z-index: -1;
+}
+#space_design .underbar{
+    z-index: auto;
+    top:inherit;
+}
+// #space_design h3{
+//     z-index: 100;
+// }
+.underbar.yellow{
+    background-color: $yellow;
+}
+.underbar.red{
+    background-color: $red;
+}
+.underbar.blue{
+    background-color: $blue;
+}
+
+@include media-breakpoint-up(lg) {
+    #philosophy{
+        position: relative;
+        top: -30vh;
+    }
+}
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+// @include media-breakpoint-up(xxl) { ... }
