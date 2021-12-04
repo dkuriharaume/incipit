@@ -1,0 +1,394 @@
+# Webalizer V2.23-08 Incremental Data - 06/14/2021 05:57:47
+2021 6 14 5 57 47
+136 136 1 135 0 0 69274011 3 1 2
+1 136 136 14 14
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+136 136 69274011 1 3 1
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+136 136 69274011 3
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0
+0
+0
+136
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/home1/incipitt/public_html/test/scss/forms/_form-text.scss
+0 1 0 219 0 0
+/home1/incipitt/public_html/test/scss/_list-group.scss
+0 1 17520352 4189 0 0
+/home1/incipitt/public_html/test/scss/forms/_form-check.scss
+0 1 0 3815 0 0
+/home1/incipitt/public_html/test/custom.scss
+0 1 17287216 9689 0 0
+/home1/incipitt/public_html/test/smartScroll.css
+0 1 17285648 238 0 0
+/home1/incipitt/public_html/test/scss/mixins/_buttons.scss
+0 1 0 3815 0 0
+/home1/incipitt/public_html/test/pdfs/与薬依頼書.pdf
+0 1 0 84081 0 0
+/home1/incipitt/public_html/test/scss/_popover.scss
+0 1 17288928 5210 0 0
+/home1/incipitt/public_html/test/scss/_transitions.scss
+0 1 17521520 239 0 0
+/home1/incipitt/public_html/test/favicon/mstile-150x150.png
+0 1 0 8421 0 0
+/home1/incipitt/public_html/test/.htaccess
+0 1 17286208 37 0 0
+/home1/incipitt/public_html/test/scss/forms/_input-group.scss
+0 1 0 3364 0 0
+/home1/incipitt/public_html/test/scss/mixins/_caret.scss
+0 1 0 1411 0 0
+/home1/incipitt/public_html/test/images/incipit/incipit_logo_combined_trimmed.png
+0 1 17533680 35703 0 0
+/home1/incipitt/public_html/test/scss/_tooltip.scss
+0 1 17521664 2602 0 0
+/home1/incipitt/public_html/test/scss/helpers/_clearfix.scss
+0 1 0 37 0 0
+/home1/incipitt/public_html/test/scss/_navbar.scss
+0 1 17288496 6516 0 0
+/home1/incipitt/public_html/test/scss/_forms.scss
+0 1 17519632 256 0 0
+/home1/incipitt/public_html/test/scss/bootstrap.scss
+0 1 17518608 1022 0 0
+/home1/incipitt/public_html/test/scss/mixins/_utilities.scss
+0 1 0 2286 0 0
+/home1/incipitt/public_html/test/scss/_breadcrumb.scss
+0 1 17518320 923 0 0
+/home1/incipitt/public_html/test/scss/helpers/_colored-links.scss
+0 1 0 326 0 0
+/home1/incipitt/public_html/test/pdfs/incipit_process_book.pdf
+0 1 0 10187060 0 0
+/home1/incipitt/public_html/test/scss/_card.scss
+0 1 17520800 4729 0 0
+/home1/incipitt/public_html/test/scss/_containers.scss
+0 1 17288208 1196 0 0
+/home1/incipitt/public_html/test/favicon/android-chrome-192x192.png
+0 1 0 18038 0 0
+/home1/incipitt/public_html/test/images/incipit/nijinoki.jpg
+0 1 0 12568862 0 0
+/home1/incipitt/public_html/test/scss/forms/_form-range.scss
+0 1 0 2798 0 0
+/home1/incipitt/public_html/test/scss/_close.scss
+0 1 17520208 1130 0 0
+/home1/incipitt/public_html/test/images/incipit/incipit_logo_text.png
+0 1 0 49732 0 0
+/home1/incipitt/public_html/test/images/incipit/incipit_logo_icon.png
+0 1 0 38169 0 0
+/home1/incipitt/public_html/test/scss/bootstrap-grid.scss
+0 1 0 1340 0 0
+/home1/incipitt/public_html/test/pdfs/年度全体の計画.pdf
+0 1 0 177327 0 0
+/home1/incipitt/public_html/test/scss/_images.scss
+0 1 17520064 1157 0 0
+/home1/incipitt/public_html/test/scss/_spinners.scss
+0 1 17522256 1329 0 0
+/home1/incipitt/public_html/test/scss/mixins/_box-shadow.scss
+0 1 0 398 0 0
+/home1/incipitt/public_html/test/custom.css.map
+0 1 17287360 44557 0 0
+/home1/incipitt/public_html/test/favicon/favicon-32x32.png
+0 1 0 1661 0 0
+/home1/incipitt/public_html/test/scss/mixins/_border-radius.scss
+0 1 0 1953 0 0
+/home1/incipitt/public_html/test/scss/_grid.scss
+0 1 17520944 286 0 0
+/home1/incipitt/public_html/test/scss/helpers/_stretched-link.scss
+0 1 0 223 0 0
+/home1/incipitt/public_html/test/scss/mixins/_resize.scss
+0 1 0 202 0 0
+/home1/incipitt/public_html/test/scss/_utilities.scss
+0 1 17519488 12197 0 0
+/home1/incipitt/public_html/test/pdfs/児童票.pdf
+0 1 17525408 101847 0 0
+/home1/incipitt/public_html/test/favicon/android-chrome-512x512.png
+0 1 0 119623 0 0
+/home1/incipitt/public_html/test/bootstrap.bundle.min.js
+0 1 0 80821 0 0
+/home1/incipitt/public_html/test/scss/mixins/_table-variants.scss
+0 1 0 980 0 0
+/home1/incipitt/public_html/test/form_validation.js
+0 1 17286640 651 0 0
+/home1/incipitt/public_html/test/scss/_button-group.scss
+0 1 0 2969 0 0
+/home1/incipitt/public_html/test/favicon/browserconfig.xml
+0 1 0 246 0 0
+/home1/incipitt/public_html/test/images/incipit/flowers.jpg
+0 1 0 524512 0 0
+/home1/incipitt/public_html/test/custom.css
+0 1 17287504 183881 0 0
+/home1/incipitt/public_html/test/scss/mixins/_grid.scss
+0 1 17531312 3894 0 0
+/home1/incipitt/public_html/test/.DS_Store
+0 1 17287792 6148 0 0
+/home1/incipitt/public_html/test/scss/mixins/_text-truncate.scss
+0 1 0 168 0 0
+/home1/incipitt/public_html/test/scss/mixins/_image.scss
+0 1 0 395 0 0
+/home1/incipitt/public_html/test/scss/mixins/_pagination.scss
+0 1 0 671 0 0
+/home1/incipitt/public_html/test/scss/forms/_floating-labels.scss
+0 1 0 1709 0 0
+/home1/incipitt/public_html/test/scss/mixins/_alert.scss
+0 1 0 192 0 0
+/home1/incipitt/public_html/test/favicon/site.webmanifest
+0 1 0 426 0 0
+/home1/incipitt/public_html/test/scss/forms/_form-control.scss
+0 1 0 7001 0 0
+/home1/incipitt/public_html/test/pdfs/個人情報同意書.pdf
+0 1 0 30765 0 0
+/home1/incipitt/public_html/test/images/incipit/incipit_logo_combined@2x.png
+0 1 17534816 92857 0 0
+/home1/incipitt/public_html/test/scss/_nav.scss
+0 1 17521232 2385 0 0
+/home1/incipitt/public_html/test/scss/mixins/_visually-hidden.scss
+0 1 0 869 0 0
+/home1/incipitt/public_html/test/scss/mixins/_clearfix.scss
+0 1 0 147 0 0
+/home1/incipitt/public_html/test/scss/helpers/_text-truncation.scss
+0 1 0 73 0 0
+/home1/incipitt/public_html/test/scss/helpers/_position.scss
+0 1 0 501 0 0
+/home1/incipitt/public_html/test/scss/mixins/_breakpoints.scss
+0 1 0 4484 0 0
+/home1/incipitt/public_html/test/scss/_variables.scss
+0 1 17288784 58089 0 0
+/home1/incipitt/public_html/test/scroller.js
+0 1 17286352 1099 0 0
+/home1/incipitt/public_html/test/scss/forms/_labels.scss
+0 1 0 1142 0 0
+/home1/incipitt/public_html/test/scss/mixins/_gradients.scss
+0 1 0 1825 0 0
+/home1/incipitt/public_html/test/pdfs/延長保育利用申請.pdf
+0 1 0 202802 0 0
+/home1/incipitt/public_html/test/
+0 1 17287936 18801 1 0
+/home1/incipitt/public_html/test/pdfs/保護者説明会資料.pdf
+0 1 0 970029 0 0
+/home1/incipitt/public_html/test/images/incipit/incipit_philosophy.jpg
+0 1 0 773153 0 0
+/home1/incipitt/public_html/test/scss/forms/_validation.scss
+0 1 0 513 0 0
+/home1/incipitt/public_html/test/scss/_buttons.scss
+0 1 17519776 2160 0 0
+/home1/incipitt/public_html/test/images/incipit/kihada@2x.jpg
+0 1 0 89073 0 0
+/home1/incipitt/public_html/test/scss/_root.scss
+0 1 17521808 597 0 0
+/home1/incipitt/public_html/test/favicon/safari-pinned-tab.svg
+0 1 0 2368 0 0
+/home1/incipitt/public_html/test/pdfs/重要事項説明.pdf
+0 1 0 243257 0 0
+/home1/incipitt/public_html/test/scss/_pagination.scss
+0 1 17520656 1659 0 0
+/home1/incipitt/public_html/test/images/incipit/toys.jpg
+0 1 0 10231243 0 0
+/home1/incipitt/public_html/test/scss/mixins/_deprecate.scss
+0 1 0 613 0 0
+/home1/incipitt/public_html/test/scss/utilities/_api.scss
+0 1 0 1685 0 0
+/home1/incipitt/public_html/test/scss/mixins/_lists.scss
+0 1 0 168 0 0
+/home1/incipitt/public_html/test/scss/_accordion.scss
+0 1 17519040 2695 0 0
+/home1/incipitt/incipit216.com/admin/flowers.jpg
+0 2 0 1049024 0 0
+/home1/incipitt/public_html/test/scss/helpers/_visually-hidden.scss
+0 1 0 117 0 0
+/home1/incipitt/public_html/test/sitemap.xml
+0 1 17287648 1523 0 0
+/home1/incipitt/public_html/test/modernizr-custom.js
+0 1 17286784 3401 0 0
+/home1/incipitt/public_html/test/scss/_helpers.scss
+0 1 17518896 218 0 0
+/home1/incipitt/public_html/test/scss/_tables.scss
+0 1 17519920 4132 0 0
+/home1/incipitt/public_html/test/pdfs/園のしおり.pdf
+0 1 0 341004 0 0
+/home1/incipitt/public_html/test/scss/_mixins.scss
+0 1 17521088 841 0 0
+/home1/incipitt/public_html/test/images/.htaccess
+0 1 17522848 38 0 0
+/home1/incipitt/public_html/test/images/incipit/tableware.jpg
+0 1 0 3940324 0 0
+/home1/incipitt/public_html/test/scss/mixins/_reset-text.scss
+0 1 0 495 0 0
+/home1/incipitt/public_html/test/scss/_toasts.scss
+0 1 17288352 1153 0 0
+/home1/incipitt/public_html/test/scss/mixins/_list-group.scss
+0 1 0 439 0 0
+/home1/incipitt/public_html/test/images/incipit/photo4@2x.jpg
+0 1 0 754085 0 0
+/home1/incipitt/public_html/test/pdfs/年間行事.pdf
+0 1 17525104 272659 0 0
+/home1/incipitt/public_html/test/scss/_carousel.scss
+0 1 17518464 5441 0 0
+/home1/incipitt/public_html/test/pdfs/緊急連絡先.pdf
+0 1 0 103982 0 0
+/home1/incipitt/public_html/test/images/incipit/room1.jpg
+0 1 0 9622095 0 0
+/home1/incipitt/public_html/test/scss/bootstrap-utilities.scss
+0 1 0 371 0 0
+/home1/incipitt/public_html/test/favicon/favicon.ico
+0 1 17523840 15086 0 0
+/home1/incipitt/public_html/test/scss/mixins/_container.scss
+0 1 0 265 0 0
+/home1/incipitt/public_html/test/scss/_alert.scss
+0 1 17521376 1414 0 0
+/home1/incipitt/public_html/test/favicon/apple-touch-icon.png
+0 1 0 15947 0 0
+/home1/incipitt/public_html/test/custom_animation.css
+0 1 17286496 1018 0 0
+/home1/incipitt/public_html/test/scss/forms/_form-select.scss
+0 1 0 2092 0 0
+/home1/incipitt/public_html/test/scss/mixins/_forms.scss
+0 1 0 3332 0 0
+/home1/incipitt/public_html/test/favicon/favicon-16x16.png
+0 1 0 1175 0 0
+/home1/incipitt/public_html/test/inview.js
+0 1 17287072 1602 0 0
+/home1/incipitt/public_html/test/.gitignore
+0 1 17286064 24 0 0
+/home1/incipitt/public_html/test/scss/_reboot.scss
+0 1 17519344 12968 0 0
+/home1/incipitt/public_html/test/images/incipit/食器.jpg
+0 1 0 3957497 0 0
+/home1/incipitt/public_html/test/scss/vendor/_rfs.scss
+0 1 17533056 8824 0 0
+/home1/incipitt/public_html/test/smartScroll.js
+0 1 17286928 530 0 0
+/home1/incipitt/public_html/test/scss/bootstrap-reboot.scss
+0 1 0 699 0 0
+/home1/incipitt/public_html/test/scss/_progress.scss
+0 1 17288640 1094 0 0
+/home1/incipitt/public_html/test/scss/_badge.scss
+0 1 17518752 624 0 0
+/home1/incipitt/public_html/test/about/
+0 1 17523280 27257 0 0
+/home1/incipitt/public_html/test/images/incipit/toki.jpg
+0 1 0 12026165 0 0
+/home1/incipitt/public_html/test/scss/helpers/_ratio.scss
+0 1 0 379 0 0
+/home1/incipitt/public_html/test/scss/_functions.scss
+0 1 17288064 7906 0 0
+/home1/incipitt/public_html/test/thankyou/
+0 1 17523136 7121 0 0
+/home1/incipitt/public_html/test/images/.DS_Store
+0 1 17522992 6148 0 0
+/home1/incipitt/public_html/test/scss/mixins/_transition.scss
+0 1 0 661 0 0
+/home1/incipitt/public_html/test/scss/_dropdown.scss
+0 1 17522544 5555 0 0
+/home1/incipitt/public_html/test/scss/_modal.scss
+0 1 17522112 6013 0 0
+/home1/incipitt/public_html/test/scss/_type.scss
+0 1 17522400 1344 0 0
+# End Of Table - urls
+# -sites- (monthly)
+m106072044194.v4.enabler.ne.jp
+0 136 136 69274011 1 1623650210
+/home1/incipitt/public_html/test/about/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+m106072044194.v4.enabler.ne.jp
+0 136 136 69274011 1 1623650210
+/home1/incipitt/public_html/test/about/
+# End Of Table - sites (daily)
+# -referrers- 
+# End Of Table - referrers
+# -agents- 
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+incipitt
+0 134 134 68224987 2 1623650210
+admin@incipit216.com
+0 2 2 1049024 1 0
+# End Of Table - usernames

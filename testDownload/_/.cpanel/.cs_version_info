@@ -1,0 +1,10 @@
+---
+/home1/incipitt/public_html:
+  db: incipitt_WPVCK
+  domain: incipit216.com
+  hostname: box2058.bluehost.com
+  path: /home1/incipitt/public_html
+  table: Gr7_options
+  type: wordpress
+  user: incipitt
+  version: 5.7.2
