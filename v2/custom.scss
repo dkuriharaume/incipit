@@ -555,7 +555,524 @@ $rooms-blog-bg-width: 65vw;
         }
     }
 }
+#p2{
+    .bg{
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        z-index:1;
+        overflow:hidden;
+    }
+    .bg-noclip{
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index: 2;
+        overflow:visible;
+    }
+    .contents{
+        position:relative;
+        z-index:3;
+    }
+    $overview-shape-pos-x:7vw;
+    #overview{
+        position:relative;
+        $section-height:40vh;
+        $section-sm-height:100vh;
+        height:$section-height;
+        @include media-breakpoint-up(sm){
+            height:$section-sm-height;
+        }
+        background-color:white;
+        z-index:1;
+        .contents{
+            .h1-container{
+                position:absolute;
+                top:15vh;
+            }
+            .text-container{
+                position:absolute;
+                top:50vh;
+            }
+        }
+        .bg{
+            .shape{
+                $shape-width:70vw;
+                $shape-sm-width:70vw;
+                $shape-radius:$shape-width/2;
+                $shape-sm-radius:$shape-sm-width/2;
 
+                position:absolute;
+                width:$shape-width;
+                height:$section-height*.75;
+                border-radius:$shape-radius $shape-radius 0 0;
+                left:$overview-shape-pos-x;
+                bottom:0;
+                background-color:$nijitaupe;
+
+                @include media-breakpoint-up(sm){
+                    width:$shape-sm-width;
+                    height:$section-sm-height*.75;
+                    border-radius: $shape-sm-radius $shape-sm-radius 0 0;
+                }
+            }
+            .door{
+                $door-width:50vw;
+                $door-sm-width:35vw;
+                $door-height:$section-height*.5;
+                $door-sm-height:$section-sm-height*.5;
+                $door-radius:$door-width/2;
+                $door-sm-radius:$door-sm-width/2;
+
+                width:$door-width;
+                height:$door-height;
+                border-radius: $door-radius $door-radius 0 0;
+                position:absolute;
+                left:(100vw - $door-width)*.8;
+                bottom:0;
+                
+                @include media-breakpoint-up(sm){
+                    width:$door-sm-width;
+                    height:$door-sm-height;
+                    border-radius:$door-sm-radius $door-sm-radius 0 0;
+                    left:(100vw - $door-sm-width)*.8;
+                }
+            }
+            .circle{
+                position:absolute;
+            }
+            .circle.red{
+                @include circle(7vw);
+                left:50vw;
+                top:45vh;
+                background-color: $toki;
+            }
+            .circle.yellow{
+                @include circle(3vw);
+                left:80vw;
+                top:30vh;
+                background-color: $kihada;
+            }
+            .circle.blue{
+                @include circle(10vw);
+                left:-3vw;
+                top:-3vh;
+                border:2px solid $wasurenakusa;
+            }
+        }
+    }
+    #philosophy{
+        position:relative;
+        $section-height:180vh;
+        background-color:$nijitaupe;
+        @include media-breakpoint-up(sm){
+            background-color: white;
+            height:$section-height;
+        }
+        z-index:2;
+        .contents{
+            .bubble{
+                background-color: white;
+                border-radius: 30px;
+                @include media-breakpoint-up(sm){
+                    @include circle(12vw);
+                    p{
+                        font-size: .7rem;
+                    }
+                }
+            }
+            .bubble.yellow{
+                border:solid 2px $kihada;
+            }
+            .bubble.red{
+                border:solid 2px $toki;
+                @include media-breakpoint-up(sm){
+                    position:relative;
+                    top:-10vh;
+                    left:20vw;
+                }
+            }
+            .bubble.blue{
+                border:solid 2px $wasurenakusa;
+                @include media-breakpoint-up(sm){
+                    position:relative;
+                    top:-20vh;
+                    left:initial;
+                }
+            }
+            .underbar{
+                position:relative;
+                display:block;
+                height:.25rem;
+                width:7rem;
+                z-index:2;
+            }
+            .underbar.yellow{
+                background-color:$kihada;
+            }
+            .underbar.red{
+                background-color:$toki;
+            }
+            .underbar.blue{
+                background-color:$wasurenakusa;
+            }
+        }
+        .bg{
+            .square{
+                position:absolute;
+                width:80vw;
+                height:100%;
+                top:0;
+                left:$overview-shape-pos-x;
+                background-color:$nijitaupe;
+            }
+            .bubble{
+                $bubble-width:60vw;
+                $bubble-radius:10vw;
+
+                position:absolute;
+                width:$bubble-width;
+                height:100%;
+                border-radius:$bubble-radius 0 0 0;
+                top:0;
+                right:0;
+                background-color:white;
+            }
+            .shape{
+                $shape-width:50vw;
+                $shape-radius:10vw;
+
+                position:absolute;
+                width:$shape-width;
+                height:$section-height*.8;
+                border-radius:$shape-radius 0 0 0;
+                bottom:0;
+                right:0;
+                background-color: $nijitaupe;
+            }
+            .circle{
+                position:absolute;
+            }
+            .circle.blue{
+                @include circle(2vw);
+                left:30vw;
+                top:8vh;
+                background-color: $wasurenakusa;
+            }
+            .circle.yellow{
+                @include circle(8vw);
+                left:80vw;
+                top:60vh;
+                background-color: $kihada;
+            }
+            .circle.red{
+                @include circle(5vw);
+                left:60vw;
+                top:110vh;
+                background-color: $toki;
+            }
+        }
+    }
+    #phil-bottom{
+        $bottom-height:10vh;
+
+        position:relative;
+        width:100%;
+        height:$bottom-height;
+        background-color:$nijitaupe;
+        z-index:3;
+    }
+    #docs{
+        position:relative;
+        z-index:4;
+        .bg-noclip{
+            .circle.blue{
+                position:absolute;
+                @include circle(4vw);
+                top:-6vh;
+                left:70vw;
+                background-color: $wasurenakusa;
+            }
+        }
+    }
+    #differece-title{
+        position:relative;
+        z-index:5;
+    }
+    #design{
+        $section-height:30vh;
+        $section-sm-height:60vh;
+
+        height:$section-height;
+        width:100%;
+        background-color: $nijitaupe;
+        position:relative;
+        z-index:6;
+        @include media-breakpoint-up(sm){
+            height:$section-sm-height;
+        }
+        .contents{
+            .text-container{
+                position:relative;
+                top:10vh;
+            }
+        }
+        .bg{
+            .door{
+                $door-width:50vw;
+                $door-sm-width:30vw;
+                $door-height:$section-height*.8;
+                $door-sm-height:$section-sm-height*.8;
+                $radius:$door-width/2;
+                $radius-sm:$door-sm-width/2;
+                
+                position:absolute;
+                width:$door-width;
+                height:$door-height;
+                border-radius:$radius $radius 0 0;
+                bottom:0;
+                left:30vw;
+
+                @include media-breakpoint-up(sm){
+                    width:$door-sm-width;
+                    height:$door-sm-height;
+                    border-radius: $radius-sm $radius-sm 0 0;
+                    left:60vw;
+                }
+            }
+            .shape{
+                $width:40vw;
+                $width-sm:40vw;
+                $height:$section-height*.9;
+                $height-sm:$section-sm-height*.9;
+                $radius:$width/2;
+                $radius-sm:$width-sm/2;
+
+                position:absolute;
+                width:$width;
+                height:$height;
+                border-radius: $radius $radius 0 0;
+                bottom: 0;
+                left: 60vw;
+                background-color:white;
+
+                @include media-breakpoint-up(sm){
+                    width:$width-sm;
+                    height:$height-sm;
+                    border-radius: $radius-sm $radius-sm 0 0;
+                    left:80vw;
+                }
+            }
+            .circle.yellow{
+                position:absolute;
+                @include circle(5vw);
+                top:40vh;
+                left:20vw;
+                background-color: $kihada;
+            }
+        }
+        .bg-noclip{
+            .circle{
+                position:absolute;
+            }
+            .circle.red{
+                @include circle(3vw);
+                top:-20vh;
+                left:70vw;
+                background-color: $toki;
+            }
+        }
+    }
+    #tableware{
+        $section-height:40vh;
+        $section-sm-height:70vh;
+        $section-width:100vw;
+
+        position:relative;
+        width:$section-width;
+        height:$section-height;
+        background-color:$nijitaupe;
+        z-index:7;
+        @include media-breakpoint-up(sm){
+            height:$section-sm-height;
+        }
+        .contents{
+            .text-container{
+                position:relative;
+                top:10vh;
+            }
+        }
+        .bg{
+            .shape{
+                $width:$section-width*.4;
+                $width-sm:$section-width*.2;
+                $height:$section-height*.4;
+                $height-sm:$section-sm-height*.4;
+                $radius:$width/2;
+                $radius-sm:$width-sm/2;
+
+                position:absolute;
+                width:$width;
+                height:$height;
+                border-radius:$radius $radius 0 0;
+                bottom:0;
+                background-color:white;
+                left:10vw;
+                @include media-breakpoint-up(sm){
+                    width:$width-sm;
+                    height:$height-sm;
+                    border-radius: $radius-sm $radius-sm 0 0;
+                    left:0;
+                }
+            }
+            .bubble{
+                $width:$section-width*.7;
+                $height:$section-sm-height*1;
+                $radius:$width/4;
+
+                position:absolute;
+                width:$width;
+                height:$height;
+                border-radius: $radius 0 0 0;
+                right:0;
+                bottom:0;
+                background-color:white;
+            }
+            .door{
+                $width:$section-width*.6;
+                $width-sm:$section-width*.35;
+                $height:$section-height*.8;
+                $height-sm:$section-sm-height*.8;
+                $radius:$width/2;
+                $radius-sm:$width-sm/2;
+
+                position:absolute;
+                width:$width;
+                height:$height;
+                border-radius: $radius $radius 0 0;
+                left: (100vw - $width)*.5;
+                bottom:0;
+                @include media-breakpoint-up(sm){
+                    width:$width-sm;
+                    height:$height-sm;
+                    border-radius: $radius-sm $radius-sm 0 0;
+                    left:(100vw - $width-sm)*.2;
+                }
+            }
+            .circle.blue{
+                position:absolute;
+                @include circle(10vw);
+                top:8vh;
+                left:20vw;
+                background-color:$wasurenakusa;
+            }
+        }
+    }
+    #authenticity{
+        $section-width:100vw;
+        $section-height:40vh;
+        $section-sm-height:70vh;
+        
+        position:relative;
+        width:$section-width;
+        height:$section-height;
+        z-index:8;
+        background-color: white;
+        @include media-breakpoint-up(sm){
+            height:$section-sm-height;
+        }
+        .contents{
+            .heading-container{
+                position:relative;
+                top:15vh;
+            }
+            .text-container{
+                position:relative;
+                top:20vh;
+            }
+        }
+        .bg{
+            .shape{
+                $width:$section-width*.4;
+                $width-sm:$section-width*.2;
+                $height:$section-height*.4;
+                $height-sm:$section-sm-height*.4;
+                $radius:$width/2;
+                $radius-sm:$width-sm/2;
+
+                position:absolute;
+                width:$width;
+                height:$height;
+                border-radius: $radius $radius 0 0;
+                bottom:0;
+                left:10vw;
+                background-color: $nijitaupe;
+                
+                @include media-breakpoint-up(sm){
+                    width:$width-sm;
+                    height:$height-sm;
+                    border-radius: $radius-sm $radius-sm 0 0;
+                    left:25vw;
+                    background-color: white;
+                }
+            }
+            .bubble{
+                $width:$section-width*.6;
+                $height:$section-sm-height;
+                $radius:$width/4;
+    
+                position:absolute;
+                width:$width;
+                height:$height;
+                border-radius:0 $radius 0 0;
+                background-color: $nijitaupe;
+                left:0;
+                bottom:0;
+            }
+            .door{
+                $width:$section-width*.6;
+                $width-sm:$section-width*.3;
+                $height:$section-height*.7;
+                $height-sm:$section-sm-height*.7;
+                $radius:$width/2;
+                $radius-sm:$width-sm/2;
+    
+                position:absolute;
+                width:$width;
+                height:$height;
+                border-radius: $radius $radius 0 0;
+                bottom:0;
+                left:20vw;
+                @include media-breakpoint-up(sm){
+                    width:$width-sm;
+                    height:$height-sm;
+                    border-radius: $radius-sm $radius-sm 0 0;
+                    left:35vw;
+                }
+            }
+            .circle.yellow{
+                position:absolute;
+                @include circle(3vw);
+                top:30vh;
+                left:30vw;
+                background-color: $kihada;
+            }
+        }
+        .bg-noclip{
+            .circle.red{
+                position:absolute;
+                @include circle(8vw);
+                top:-10vh;
+                left:80vw;
+                border:2px solid $toki;
+            }
+        }
+    }
+}
 .img-fit{
     width: 100%;
     height: 100%;

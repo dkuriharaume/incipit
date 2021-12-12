@@ -10530,6 +10530,465 @@ textarea.form-control-lg {
   }
 }
 
+#p2 .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+#p2 .bg-noclip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: visible;
+}
+#p2 .contents {
+  position: relative;
+  z-index: 3;
+}
+#p2 #overview {
+  position: relative;
+  height: 40vh;
+  background-color: white;
+  z-index: 1;
+}
+@media (min-width: 576px) {
+  #p2 #overview {
+    height: 100vh;
+  }
+}
+#p2 #overview .contents .h1-container {
+  position: absolute;
+  top: 15vh;
+}
+#p2 #overview .contents .text-container {
+  position: absolute;
+  top: 50vh;
+}
+#p2 #overview .bg .shape {
+  position: absolute;
+  width: 70vw;
+  height: 30vh;
+  border-radius: 35vw 35vw 0 0;
+  left: 7vw;
+  bottom: 0;
+  background-color: #efe5dc;
+}
+@media (min-width: 576px) {
+  #p2 #overview .bg .shape {
+    width: 70vw;
+    height: 75vh;
+    border-radius: 35vw 35vw 0 0;
+  }
+}
+#p2 #overview .bg .door {
+  width: 50vw;
+  height: 20vh;
+  border-radius: 25vw 25vw 0 0;
+  position: absolute;
+  left: 40vw;
+  bottom: 0;
+}
+@media (min-width: 576px) {
+  #p2 #overview .bg .door {
+    width: 35vw;
+    height: 50vh;
+    border-radius: 17.5vw 17.5vw 0 0;
+    left: 52vw;
+  }
+}
+#p2 #overview .bg .circle {
+  position: absolute;
+}
+#p2 #overview .bg .circle.red {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 7vw;
+  left: 50vw;
+  top: 45vh;
+  background-color: #F3A696;
+}
+#p2 #overview .bg .circle.yellow {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3vw;
+  left: 80vw;
+  top: 30vh;
+  background-color: #FEF263;
+}
+#p2 #overview .bg .circle.blue {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10vw;
+  left: -3vw;
+  top: -3vh;
+  border: 2px solid #92AFE4;
+}
+#p2 #philosophy {
+  position: relative;
+  background-color: #efe5dc;
+  z-index: 2;
+}
+@media (min-width: 576px) {
+  #p2 #philosophy {
+    background-color: white;
+    height: 180vh;
+  }
+}
+#p2 #philosophy .contents .bubble {
+  background-color: white;
+  border-radius: 30px;
+}
+@media (min-width: 576px) {
+  #p2 #philosophy .contents .bubble {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 12vw;
+  }
+  #p2 #philosophy .contents .bubble p {
+    font-size: 0.7rem;
+  }
+}
+#p2 #philosophy .contents .bubble.yellow {
+  border: solid 2px #FEF263;
+}
+#p2 #philosophy .contents .bubble.red {
+  border: solid 2px #F3A696;
+}
+@media (min-width: 576px) {
+  #p2 #philosophy .contents .bubble.red {
+    position: relative;
+    top: -10vh;
+    left: 20vw;
+  }
+}
+#p2 #philosophy .contents .bubble.blue {
+  border: solid 2px #92AFE4;
+}
+@media (min-width: 576px) {
+  #p2 #philosophy .contents .bubble.blue {
+    position: relative;
+    top: -20vh;
+    left: initial;
+  }
+}
+#p2 #philosophy .contents .underbar {
+  position: relative;
+  display: block;
+  height: 0.25rem;
+  width: 7rem;
+  z-index: 2;
+}
+#p2 #philosophy .contents .underbar.yellow {
+  background-color: #FEF263;
+}
+#p2 #philosophy .contents .underbar.red {
+  background-color: #F3A696;
+}
+#p2 #philosophy .contents .underbar.blue {
+  background-color: #92AFE4;
+}
+#p2 #philosophy .bg .square {
+  position: absolute;
+  width: 80vw;
+  height: 100%;
+  top: 0;
+  left: 7vw;
+  background-color: #efe5dc;
+}
+#p2 #philosophy .bg .bubble {
+  position: absolute;
+  width: 60vw;
+  height: 100%;
+  border-radius: 10vw 0 0 0;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+#p2 #philosophy .bg .shape {
+  position: absolute;
+  width: 50vw;
+  height: 144vh;
+  border-radius: 10vw 0 0 0;
+  bottom: 0;
+  right: 0;
+  background-color: #efe5dc;
+}
+#p2 #philosophy .bg .circle {
+  position: absolute;
+}
+#p2 #philosophy .bg .circle.blue {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 2vw;
+  left: 30vw;
+  top: 8vh;
+  background-color: #92AFE4;
+}
+#p2 #philosophy .bg .circle.yellow {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 8vw;
+  left: 80vw;
+  top: 60vh;
+  background-color: #FEF263;
+}
+#p2 #philosophy .bg .circle.red {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 5vw;
+  left: 60vw;
+  top: 110vh;
+  background-color: #F3A696;
+}
+#p2 #phil-bottom {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-color: #efe5dc;
+  z-index: 3;
+}
+#p2 #docs {
+  position: relative;
+  z-index: 4;
+}
+#p2 #docs .bg-noclip .circle.blue {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 4vw;
+  top: -6vh;
+  left: 70vw;
+  background-color: #92AFE4;
+}
+#p2 #differece-title {
+  position: relative;
+  z-index: 5;
+}
+#p2 #design {
+  height: 30vh;
+  width: 100%;
+  background-color: #efe5dc;
+  position: relative;
+  z-index: 6;
+}
+@media (min-width: 576px) {
+  #p2 #design {
+    height: 60vh;
+  }
+}
+#p2 #design .contents .text-container {
+  position: relative;
+  top: 10vh;
+}
+#p2 #design .bg .door {
+  position: absolute;
+  width: 50vw;
+  height: 24vh;
+  border-radius: 25vw 25vw 0 0;
+  bottom: 0;
+  left: 30vw;
+}
+@media (min-width: 576px) {
+  #p2 #design .bg .door {
+    width: 30vw;
+    height: 48vh;
+    border-radius: 15vw 15vw 0 0;
+    left: 60vw;
+  }
+}
+#p2 #design .bg .shape {
+  position: absolute;
+  width: 40vw;
+  height: 27vh;
+  border-radius: 20vw 20vw 0 0;
+  bottom: 0;
+  left: 60vw;
+  background-color: white;
+}
+@media (min-width: 576px) {
+  #p2 #design .bg .shape {
+    width: 40vw;
+    height: 54vh;
+    border-radius: 20vw 20vw 0 0;
+    left: 80vw;
+  }
+}
+#p2 #design .bg .circle.yellow {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 5vw;
+  top: 40vh;
+  left: 20vw;
+  background-color: #FEF263;
+}
+#p2 #design .bg-noclip .circle {
+  position: absolute;
+}
+#p2 #design .bg-noclip .circle.red {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3vw;
+  top: -20vh;
+  left: 70vw;
+  background-color: #F3A696;
+}
+#p2 #tableware {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  background-color: #efe5dc;
+  z-index: 7;
+}
+@media (min-width: 576px) {
+  #p2 #tableware {
+    height: 70vh;
+  }
+}
+#p2 #tableware .contents .text-container {
+  position: relative;
+  top: 10vh;
+}
+#p2 #tableware .bg .shape {
+  position: absolute;
+  width: 40vw;
+  height: 16vh;
+  border-radius: 20vw 20vw 0 0;
+  bottom: 0;
+  background-color: white;
+  left: 10vw;
+}
+@media (min-width: 576px) {
+  #p2 #tableware .bg .shape {
+    width: 20vw;
+    height: 28vh;
+    border-radius: 10vw 10vw 0 0;
+    left: 0;
+  }
+}
+#p2 #tableware .bg .bubble {
+  position: absolute;
+  width: 70vw;
+  height: 70vh;
+  border-radius: 17.5vw 0 0 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+#p2 #tableware .bg .door {
+  position: absolute;
+  width: 60vw;
+  height: 32vh;
+  border-radius: 30vw 30vw 0 0;
+  left: 20vw;
+  bottom: 0;
+}
+@media (min-width: 576px) {
+  #p2 #tableware .bg .door {
+    width: 35vw;
+    height: 56vh;
+    border-radius: 17.5vw 17.5vw 0 0;
+    left: 13vw;
+  }
+}
+#p2 #tableware .bg .circle.blue {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10vw;
+  top: 8vh;
+  left: 20vw;
+  background-color: #92AFE4;
+}
+#p2 #authenticity {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  z-index: 8;
+  background-color: white;
+}
+@media (min-width: 576px) {
+  #p2 #authenticity {
+    height: 70vh;
+  }
+}
+#p2 #authenticity .contents .heading-container {
+  position: relative;
+  top: 15vh;
+}
+#p2 #authenticity .contents .text-container {
+  position: relative;
+  top: 20vh;
+}
+#p2 #authenticity .bg .shape {
+  position: absolute;
+  width: 40vw;
+  height: 16vh;
+  border-radius: 20vw 20vw 0 0;
+  bottom: 0;
+  left: 10vw;
+  background-color: #efe5dc;
+}
+@media (min-width: 576px) {
+  #p2 #authenticity .bg .shape {
+    width: 20vw;
+    height: 28vh;
+    border-radius: 10vw 10vw 0 0;
+    left: 25vw;
+    background-color: white;
+  }
+}
+#p2 #authenticity .bg .bubble {
+  position: absolute;
+  width: 60vw;
+  height: 70vh;
+  border-radius: 0 15vw 0 0;
+  background-color: #efe5dc;
+  left: 0;
+  bottom: 0;
+}
+#p2 #authenticity .bg .door {
+  position: absolute;
+  width: 60vw;
+  height: 28vh;
+  border-radius: 30vw 30vw 0 0;
+  bottom: 0;
+  left: 20vw;
+}
+@media (min-width: 576px) {
+  #p2 #authenticity .bg .door {
+    width: 30vw;
+    height: 49vh;
+    border-radius: 15vw 15vw 0 0;
+    left: 35vw;
+  }
+}
+#p2 #authenticity .bg .circle.yellow {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3vw;
+  top: 30vh;
+  left: 30vw;
+  background-color: #FEF263;
+}
+#p2 #authenticity .bg-noclip .circle.red {
+  position: absolute;
+  width: 16vw;
+  height: 16vw;
+  border-radius: 8vw;
+  top: -10vh;
+  left: 80vw;
+  border: 2px solid #F3A696;
+}
+
 .img-fit {
   width: 100%;
   height: 100%;
