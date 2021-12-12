@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:math";
 
 $link-decoration: none;
 $font-family-sans-serif: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -19,7 +20,10 @@ $custom-colors: (
     "nijigray-pale": $nijigray-pale
 );
 
-$primary: $nijigray;
+
+$nijibrown: #a38c76;
+// $primary: $nijigray;
+$primary: $nijibrown;
 $secondary: $nijigray-mid;
 $blue: $wasurenakusa;
 $red: $toki;
@@ -31,11 +35,16 @@ $whitea70: #ffffffbb;
 $secondarya70: color.adjust($secondary, $alpha: -.3);
 $pale: $nijigray-pale;
 
+$nijidark:#5d5b4f;
+$nijitaupe:#efe5dc;
+
 $custom-theme-colors:(
     "whitea80": $whitea80,
     "whitea70": $whitea70,
     "pale": $pale,
-    "secondarya70": $secondarya70
+    "secondarya70": $secondarya70,
+    "nijidark": $nijidark,
+    "nijitaupe": $nijitaupe
 );
 
 
@@ -53,6 +62,7 @@ $custom-theme-colors:(
 @import "scss/variables";
 $colors: map-merge($colors, $custom-colors);
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$font-size-base: .8rem;
 $h1-font-size: $font-size-base * 1.8;
 $h2-font-size: $font-size-base * 1.5;
 $h3-font-size: $font-size-base * 1.2;
@@ -67,8 +77,9 @@ $custom-spacers: (
   7: $spacer * 8
 );
 $spacers: map-merge($spacers, $custom-spacers);
-$btn-border-radius: 0;
+$btn-border-radius: 1000px;
 $btn-padding-y: 1rem;
+$btn-padding-x: 5rem;
 $input-border-radius: 0;
 $input-border-color: $primary;
 $form-select-border-radius: 0;
@@ -139,6 +150,491 @@ $nijigray-900: shade-color($nijigray, 80%) !default;
     background-position: center center;
     background-repeat: no-repeat;
 }
+.disp-height{
+    height: 100vh;
+}
+$door-width: 50vw;
+$door-height: 75vh;
+$door-radius: $door-width/2;
+@mixin door($width, $height, $orientation, $posAbs: false){
+    @if $posAbs{
+        position: absolute;
+    }
+    @if $height != "auto"{
+        width: $width;
+    }@else{
+        width: auto;
+    }
+    @if $height != "auto"{
+        height: $height;
+    }@else{
+        height: auto;
+    }
+    
+    $radius: $width/2;
+    @if $orientation == "top"{
+        border-radius: $radius $radius 0 0;
+    }
+    @if $orientation == "right"{
+        border-radius: 0 $radius $radius 0;
+    }
+}
+@mixin circle($radius){
+    width:$radius *2;
+    height:$radius *2;
+    border-radius: $radius;
+}
+
+.pos-frame{
+    position:relative;
+}
+#herov2{
+    height:60vh;
+    @include media-breakpoint-up(sm){
+        height:100vh;
+    }
+    width:100vw;
+    overflow: hidden;
+    background-color: $nijitaupe;
+    position: relative;
+    z-index: 1;
+    .contents{
+        position:relative;
+        z-index: 2;
+        .bubble-container.right{
+            border-radius: 0 1000px 1000px 0;
+        }
+        .bubble{
+            border-radius: inherit;
+            background-color: white;
+        }
+    }
+    .bg{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:1;
+
+        $door-width: 70vw;
+        $door-sm-width:50vw;
+        $door-height: 40vh;
+        $door-sm-height:75vh;
+        $door-radius: $door-width/2;
+        $door-sm-radius:$door-sm-width/2;
+        overflow: inherit;
+        
+        .door{
+            position:absolute;
+            width:$door-width;
+            @include media-breakpoint-up(sm){
+                width:$door-sm-width;
+            }
+            height:$door-height;
+            @include media-breakpoint-up(sm){
+                height:$door-sm-height;
+            }
+            border-radius: $door-radius $door-radius 0 0;
+            @include media-breakpoint-up(sm){
+                border-radius: $door-sm-radius $door-sm-radius 0 0;
+            }
+            bottom:0;
+            left:50vw - $door-radius;
+            @include media-breakpoint-up(sm){
+                left:50vw - $door-sm-radius;
+            }
+            z-index: 2;
+        }
+        .door-right{
+            position: absolute;
+            width:$door-width;
+            height: $door-height/1.2;
+            border-radius: $door-radius $door-radius 0 0;
+            bottom:0;
+            left: 60vw;
+            z-index: 1;
+            background-color: white;
+            @include media-breakpoint-up(sm){
+                width:$door-sm-width;
+                height: $door-sm-height/1.2;
+                border-radius:$door-sm-radius $door-sm-radius 0 0 ;
+            }
+        }
+        .circle.red{
+            position: absolute;
+            background-color: $toki;
+            top:10vh;
+            left:20vw;
+            @include circle(10vw);
+            @include media-breakpoint-up(sm){
+                top:10vh;
+                left:20vw;
+                @include circle(5vw);
+            }
+        }
+        .circle.yellow{
+            position: absolute;
+            background-color: $kihada;
+            top:40vh;
+            left:0vw;
+            @include circle(5vw);
+            @include media-breakpoint-up(sm){
+                top:70vh;
+                left:10vw;
+                @include circle(3vw);
+            }
+        }
+        .circle.blue{
+            position: absolute;
+            border: $wasurenakusa solid 2px;
+            z-index: 3;
+            top:35vh;
+            left:80vw;
+            @include circle(15vw);
+            @include media-breakpoint-up(sm){
+                top:30vh;
+                left:90vw;
+                @include circle(10vw);
+            }
+        }
+    }   
+}
+#bw-hero-rooms{
+    $section-height:10vh;
+    $section-sm-height:20vh;
+    height:$section-height;
+    @include media-breakpoint-up(sm){
+        height:$section-sm-height;
+    }
+    position: relative;
+    z-index: 2;
+    .bg{
+        position:relative;
+        height:100%;
+        .shape{
+            border-radius: $section-height 0 0 0;
+            @include media-breakpoint-up(sm){
+                border-radius: $section-sm-height 0 0 0;
+            }
+            height: inherit;
+            background-color: white;
+            $width:90vw;
+            width: $width;
+            position:relative;
+            left: 100vw - $width;
+        }
+        .circle.blue{
+            position:absolute;
+            top:-10vh;
+            left:80vw;
+            @include circle(5vw);
+            background-color:$wasurenakusa;
+        }
+    }
+}
+$rooms-blog-bg-width: 65vw;
+#rooms{
+    $radius: 13vw;
+    $radius-sm:6vw;
+    position:relative;
+    z-index: 3;
+    
+    .contents{
+        position:relative;
+        z-index:2;
+        .room-image{
+            @include circle($radius);
+            @include media-breakpoint-up(sm){
+                @include circle($radius-sm);
+            }
+        }
+    }
+    .bg{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: 1;
+        width:100%;
+        height: 100%;
+        .square{
+            position:absolute;
+            width:100%;
+            border-radius: 0 $radius 0 0;
+            left:0;
+            top:0;
+            background-color: $nijitaupe;
+            height:100%;
+
+            @include media-breakpoint-up(sm){
+                width:$rooms-blog-bg-width;
+            }
+        }
+        .circle.yellow{
+            position:absolute;
+            background-color:$kihada;
+            top:15vh;
+            left:80vw;
+            @include circle(10vw);
+            @include media-breakpoint-up(sm){
+                top:30vh;
+                left:25vw;
+                @include circle(2vw);
+
+            }
+        }
+        .circle.red{
+            position:absolute;
+            border: 2px $toki solid;
+            top:-5vh;
+            left:-10vw;
+            @include circle(10vw);
+            @include media-breakpoint-up(sm){
+                top:-10vh;
+                left:50vw;
+                @include circle(4vw);
+
+            }
+        }
+    }
+}
+#blogv2{
+    position: relative;
+    $section-height:40vh;
+    $section-sm-height:55vh;
+    height:$section-height;
+    @include media-breakpoint-up(sm){
+        height:$section-sm-height;
+    }
+    width:100vw;
+    background-color: white;
+    z-index: 4;
+    
+    .contents{
+        position:relative;
+        height:100%;
+        z-index: 3;
+    }
+    .bg{
+        position: absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        z-index: 1;
+        overflow:hidden;
+        
+        $door-width: 75vw;
+        $door-sm-width:30vw;
+        $door-height: $section-height/1.1;
+        $door-sm-height:$section-sm-height;
+        $door-radius:$door-width/2;
+        $door-sm-radius:$door-sm-width/2;
+        .door{
+            position:absolute;
+            width:$door-width;
+            height:$door-height;
+            border-radius: $door-radius $door-radius 0 0;
+            left:50vw - $door-width/2;
+            bottom:0;
+            z-index:2;
+            @include media-breakpoint-up(sm){
+                height:$door-sm-height;
+                width:$door-sm-width;
+                border-radius:$door-sm-radius $door-sm-radius 0 0;
+                left:(100vw - $door-sm-width)*.85;
+            }
+        }
+        .door-right{
+            position:absolute;
+            width:$door-width*1.1;
+            height:$door-height*.8;
+            $door-radius:$door-width*1.1/2;
+            $door-sm-radius:$door-sm-width*1.1/2;
+            border-radius: $door-radius $door-radius 0 0;
+            left:60vw;
+            bottom: 0;
+            background-color: $nijitaupe;
+            z-index:1;
+            @include media-breakpoint-up(sm){
+                width:$door-sm-width*1.1;
+                height:$door-sm-height*.8;
+                border-radius: $door-sm-radius $door-sm-radius 0 0;
+                left:70vw;
+            }
+        }
+        .square{
+            position:absolute;
+            width:$rooms-blog-bg-width;
+            height:100%;
+            left:0;
+            bottom:0;
+            background-color: $nijitaupe;
+            z-index: 1;
+        }
+    }
+    .bg-noclip{
+        position: absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        z-index: 2;
+        overflow:visible;
+
+        .circle.blue{
+            position: absolute;
+            background-color:$wasurenakusa;
+            z-index:1;
+            top:30vh;
+            left:5vw;
+            @include circle(12vw);
+            @include media-breakpoint-up(sm){
+                top:30vh;
+                left:50vw;
+                @include circle(7vw);
+
+            }
+        }
+        .circle.red{
+            position: absolute;
+            background-color:$toki;
+            z-index:1;
+            top:-5vh;
+            left:75vw;
+            @include circle(7vw);
+            @include media-breakpoint-up(sm){
+                top:-5vh;
+                left:90vw;
+                @include circle(3vw);
+
+            }
+        }
+    }
+}
+#companyv2{
+    position: relative;
+    $section-height:30vh;
+    $section-sm-height:70vh;
+    height: $section-height;
+    width:100vw;
+    z-index: 5;
+    @include media-breakpoint-up(sm){
+        height:$section-sm-height;
+    }
+    .contents{
+        position:relative;
+        height:100%;
+        z-index: 3;
+    }
+    .bg{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        z-index:1;
+        background-color:$nijitaupe;
+        overflow:hidden;
+        .shape{
+            $width:80vw;
+            $radius:$width/4;
+            height:100%;
+            width:$width;
+            
+            position:absolute;
+            left:100vw - $width;
+            bottom:0;
+            background-color: white;
+            border-radius: $radius 0 0 0;
+        }
+        $door-width:70vw;
+        $door-sm-width:30vw;
+        $door-height:$section-height*.85;
+        $door-sm-height:$door-sm-width;
+        $door-border-radius:$door-width/2;
+        $door-sm-border-radius:$door-sm-width/2;
+        .door{
+            position:absolute;
+            width: $door-width;
+            height: $door-height;
+            border-radius: $door-border-radius $door-border-radius 0 0;
+            left:30vw;
+            bottom:0;
+            @include media-breakpoint-up(sm){
+                width:$door-sm-width;
+                height:$door-sm-height;
+                border-radius:$door-sm-border-radius $door-sm-border-radius 0 0;
+                left:(100vw - $door-sm-width)*.15;
+            }
+        }
+        .door-left{
+            position:absolute;
+            width:$door-width;
+            height: $door-height / 1.5;
+            background-color: white;
+            $radius: $door-border-radius;
+            border-radius: $radius $radius 0 0;
+            left:-5vw;
+            bottom:0;
+            @include media-breakpoint-up(sm){
+                width:$door-sm-width;
+                height:$door-sm-height/1.5;
+                border-radius:$door-sm-border-radius $door-sm-border-radius 0 0;
+            }
+        }
+        .circle.yellow{
+            position:absolute;
+            background-color:$kihada;
+            top:5vh;
+            left:90vw;
+            @include circle(10vw);
+            @include media-breakpoint-up(sm){
+                top:50vh;
+                left:96vw;
+                @include circle(3vw);
+            }
+        }
+    }
+    .bg-noclip{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        z-index:2;
+        // background-color: $nijitaupe;
+        overflow:visible;
+        .circle.red{
+            position:absolute;
+            background-color: $toki;
+            top:-5vh;
+            left:5vw;
+            @include circle(5vw);
+            @include media-breakpoint-up(sm){
+                top:-10vh;
+                left:5vw;
+                @include circle(5vw);
+                
+            }
+        }
+    }
+}
+#access{
+    background-color: white;
+    @include media-breakpoint-up(sm){
+        background-color:$nijitaupe;
+    }
+    .fb-bg{
+        background: $nijitaupe;
+        @include media-breakpoint-up(sm){
+            background-color: none;
+        }
+    }
+}
+
+
+
 #top .my_bg.hero{
     height:100vh;
     background-position: 35% center;
@@ -217,9 +713,14 @@ $ap0: color.adjust($nijigray-pale, $alpha: -1);
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: inherit;
 }
 .btn{
-    box-shadow: 0px 10px 20px #00000030;
+    color:$nijitaupe;
+    padding: .5rem 2.5rem;
+    @include media-breakpoint-up(sm){
+        padding: 1rem 5rem;
+    }
 }
 .test{
     border: 1px solid #000000;
@@ -319,12 +820,15 @@ $offset-base: 3rem;
     top: 2rem;
 }
 h1{
-    font-family: $font-family-serif;
-    font-weight: 600;
+    // font-family: $font-family-serif;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
+    color:$nijidark;
 }
 h2{
-    font-family: $font-family-serif;
-    font-weight: 600;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
+    color:$nijibrown;
 }
 h3{
     font-family: $font-family-serif;
@@ -332,12 +836,12 @@ h3{
 }
 p{
     line-height: 250%;
-    color: $nijiblack-mild;
+    color: $nijibrown;
 }
-.btn{
-    color:white;
-    text-justify: center;
-}
+// .btn{
+//     color:white;
+//     text-justify: center;
+// }
 .btn.short{
     min-width: 70vw;
 }

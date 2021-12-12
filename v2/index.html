@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta charset="utf-8">
     <meta name="author" content="Daisuke Kurihara">
     <link rel="canonical" href="https://incipit-nijiiro.com/" />
@@ -49,7 +49,6 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/625630bfaf.js" crossorigin="anonymous"></script>
 </head>
-
 <body id="top">
     <!-- Facebook -->
     <div id="fb-root"></div>
@@ -57,9 +56,9 @@
         nonce="VOaMO5Zk"></script>
     <!-- navbar -->
     <div class="smart-scroll" id="smartScroll_hidden">
-        <nav class="navbar navbar-expand-lg navbar-light font-serif bg-secondarya70">
+        <nav class="navbar navbar-expand-lg navbar-dark font-sans-serif bg-nijidark">
             <a class="navbar-brand" id="scrbtn_top" style="width: 30vw" href="#">
-                <img src="images/incipit/incipit_logo_combined_trimmed.png" alt="incipit logo" class="img-fluid">
+                <img src="images/incipit/brandmark_white.png" alt="incipit logo" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbar_collapse_target" aria-control="navbar_collapse_target" aria-expanded="false"
@@ -79,98 +78,244 @@
         </nav>
     </div>
     <main>
-        <section class="my_bg hero" id="hero">
-            <!-- Hero -->
-            <div class="container h-100">
-                <div class="row justify-content-center h-100 align-items-center">
-                    <div class="col text-center font-serif text-whitea70">
-                        <h1>冒険のはじまり</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="container py-6">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-10 col-sm-6 col-lg-4 offset-right order-1 order-sm-0">
+        <section id="herov2">
+            <div class="contents h-100 container-fluid d-none d-sm-flex">
+                <div class="row h-100 align-items-center">
+                    <div class="col-6">
                         <div class="row">
-                            <div class="col-12 mx-auto col-sm-12 bg_grad_red pt-0 pb-4 px-5">
-                                <h2 class="inViewFade offset-heading">incipit保育園とは</h2>
-                                <p class="inViewFade">
-                                    incipit（インキピット）とはラテン語で「〜からの始まり」という意味があります。小規模保育園は子どもたちが初めて親元から離れて会に触れる第一歩です。<br>その最初の一歩を一緒に踏み出すための施設でありたいと願っています。
-                                </p>
+                            <div class="col g-0 bubble-container right">
+                                <div class="bubble py-5 px-5 px-lg-7">
+                                    <h1>incipit保育園とは</h1>
+                                    <p>incipit（インキピット）とはラテン語で「〜からの始まり」という意味があります。小規模保育園は子どもたちが初めて親元から離れて社会に触れる第一歩です。<br>その最初の一歩を一緒に踏み出すための施設でありたいと願っています。
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="position:relative;">
-                            <div class="col-auto mx-auto ms-sm-auto">
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
                                 <a href="./about/index.html">
-                                    <button role="button"
-                                        class="btn-primary btn short offset-button inViewFade">もっと見る</button>
+                                    <button role="button" class="btn-primary btn offset-up inViewFade">もっと見る</button>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-11 col-sm-6 col-lg-5 mb-5 mb-sm-0">
-                        <img src="images/incipit/room1.jpg" alt="about incipit"
-                            class="img-fluid offset-left z-back inViewFade" />
+                </div>
+            </div>
+            <div class="bg">
+                <div class="door">
+                    <img src="images/incipit/room1.jpg" alt="" class="img-fit">
+                </div>
+                <div class="door-right"></div>
+                <div class="circle red"></div>
+                <div class="circle blue"></div>
+                <div class = "circle yellow"></div>
+            </div>
+        </section>
+        <section id = "sm-hero-contents" class="d-flex d-sm-none">
+            <div class = "container-fluid">
+                <div class = "row p-4">
+                    <div class = "col">
+                        <div class = "row">
+                            <div class = "col">
+                                <h1 class="text-center">incipit保育園とは</h1>
+                                <p>incipit（インキピット）とはラテン語で「〜からの始まり」という意味があります。小規模保育園は子どもたちが初めて親元から離れて社会に触れる第一歩です。<br>その最初の一歩を一緒に踏み出すための施設でありたいと願っています。</p>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class="col-auto mx-auto">
+                                <a href="./about/index.html">
+                                    <button role="button" class="btn-primary btn inViewFade">もっと見る</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="blog" class="bg_grad_yellow_pale">
-            <div class="container py-6">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-sm-6 col-lg-4">
-                        <img src="./images/incipit/toys.jpg" alt="おもちゃ" class="img-fluid inViewFade">
+        <section id="bw-hero-rooms" class="d-none d-sm-block">
+            <div class="bg bg-nijitaupe">
+                <div class="shape"></div>
+                <div class = "circle blue"></div>
+            </div>
+        </section>
+        <section id="rooms">
+            <div class="container-fluid contents">
+                <div class="row py-4 py-sm-0">
+                    <div class="col-auto mx-auto mx-sm-0 mb-4 mb-sm-0 col-sm-7 images p-4 p-sm-6">
+                        <img src="images/incipit/toki.jpg" alt="toki room" class="room-image m-0 ms-sm-6">
+                        <img src="images/incipit/room1.jpg" alt="wasurenagusa room" class="room-image mx-auto mx-sm-4">
+                        <img src="images/incipit/kihada@2x.jpg" alt="kihada room" class="room-image">
                     </div>
-                    <div class="col-11 col-sm-6 col-lg-4 p-4">
-                        <h2 class="inViewFade">日々のできごと</h2>
-                        <p class="my-4 inViewFade">子どもたちは日々成長し、新しい発見や学びを繰り返しています。<br>
-                            そんな日常から、行事などの特別な日まで、incipit保育園の軌跡をつづっています。</p>
+                    <div class="col col-sm-3 mx-auto px-4 align-self-center">
                         <div class="row">
-                            <div class="col-auto col-sm-5 d-grid mx-auto ms-sm-auto">
-                                <button role="button"
-                                    class="btn short btn-primary inViewFade disabled">ブログへ（作成中）</button>
+                            <div class="col">
+                                <p>保育室や食堂の壁には、地域の特徴をイメージしたテーマカラーを設け、日本の伝統色で彩っています。</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <a href="#">
+                                    <button role="button" class="btn-primary btn inViewFade">もっと見る</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <div class="square"></div>
+                <div class="circle yellow"></div>
+                <div class="circle red"></div>
+            </div>
+        </section>
+        <section id="blogv2">
+            <div class = "container-fluid contents d-sm-inline-block d-none">
+                <div class="row h-100">
+                    <div class="col-4 offset-2 align-self-center">
+                        <div class="row mt-4">
+                            <div class="col mx-auto">
+                                <h1>日々のできごと</h1>
+                                <p>子どもたちは日々成長し、新しい発見や学びを繰り返しています。<br>そんな日常から、行事などの特別な日まで、incipit保育園の軌跡をつづっています。</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <a href="#">
+                                    <button role="button" class="btn-primary btn inViewFade">もっと見る</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <div class="square d-sm-flex d-none"></div>
+                <div class="door-right"></div>
+                <div class="door">
+                    <img src="images/incipit/kid.jpg" class="img-fit">
+                </div>
+            </div>
+            <div class = "bg-noclip">
+                <div class = "circle blue"></div>
+                <div class = "circle red"></div>
+            </div>
+        </section>
+        <section id="rooms-sm-contents">
+            <div class = "container-fluid contents d-flex d-sm-none">
+                <div class="row p-4">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="text-center">日々のできごと</h1>
+                                <p>子どもたちは日々成長し、新しい発見や学びを繰り返しています。<br>そんな日常から、行事などの特別な日まで、incipit保育園の軌跡をつづっています。</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <a href="#">
+                                    <button role="button" class="btn-primary btn inViewFade">もっと見る</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="other">
-            <div class="container py-6">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-10 col-sm-6 col-lg-4 bg_grad_blue pt-0 pb-4 px-5 order-1 order-sm-0 offset-right">
-                        <h2 class="offset-heading inViewFade">姉妹園・法人</h2>
-                        <div class="row inViewFade mb-4">
-                            <div class="col-12 col-sm-auto">
-                                <p class>にじのき保育園</p>
-                            </div>
-                            <div class="col-12 col-sm-4 ms-auto">
-                                <a href="https://nijinoki.ed.jp/">
-                                    <button role="button" class="btn short btn-primary">保育園HPへ</button>
-                                </a>
+        <section id="companyv2">
+            <div class="container-fluid contents d-none d-sm-block">
+                <div class="row h-100 ">
+                    <div class="col-5 offset-6 align-self-center p-4">
+                        <div class="row mb-4">
+                            <div class="col">
+                                <h1>姉妹園・法人</h1>
                             </div>
                         </div>
-                        <div class="row inViewFade">
-                            <div class="col-12 col-sm-auto">
-                                <p>株式会社にじいろキャンバス</p>
+                        <div class="row my-3">
+                            <div class="col">
+                                <div class="row justify-content-between">
+                                    <div class="col">
+                                        <h2>にじのき保育園</h2>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <button role="button" class="btn-primary btn inViewFade">保育園HPへ</button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-4 ms-auto">
-                                <a href="https://nijiirocanvas216.pro/">
-                                    <button role="button" class="btn short btn-primary">会社HPへ</button>
-                                </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row justify-content-between">
+                                    <div class="col">
+                                        <h2>株式会社にじいろキャンバス</h2>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <button role="button" class="btn-primary btn inViewFade">会社HPへ</button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-11 col-sm-6 col-lg-5 offset-left z-back mb-5 mb-sm-0">
-                        <img src="images/incipit/nijinoki.jpg" alt="にじのき保育園" class="img-fluid inViewFade">
+                </div>
+            </div>
+            <div class="bg">
+                <div class="shape d-none d-sm-inline-block"></div>
+                <div class="door-left"></div>
+                <div class="door">
+                    <img src="images/incipit/nijinoki.jpg" class="img-fit">
+                </div>
+                <div class = "circle yellow"></div>
+            </div>
+            <div class = "bg-noclip">
+                <div class = "circle red"></div>
+            </div>
+        </section>
+        <section id="company-sm-contents" class="d-block d-sm-none bg-nijitaupe">
+            <div class="container-fluid text-center">
+                <div class="row p-4">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col">
+                                <h1>姉妹園・法人</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row justify-content-between">
+                                    <div class="col-12">
+                                        <p>にじのき保育園</p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <button role="button" class="btn-primary btn inViewFade">保育園HPへ</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <div class="row justify-content-between">
+                                    <div class="col-12">
+                                        <p>株式会社にじいろキャンバス</p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <button role="button" class="btn-primary btn inViewFade">会社HPへ</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="access" class="multi-grad">
-            <div class="container py-6">
+        <section id="access">
+            <div class="container py-4 py-sm-6">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6">
                         <h2 class="text-center inViewFade">アクセス</h2>
@@ -180,12 +325,12 @@
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.199866857383!2d139.90301721525864!3d35.67208038019654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018877cbacb3647%3A0x822dc5e3810fd072!2z44CSMjcyLTAxMzgg5Y2D6JGJ55yM5biC5bed5biC5Y2X6KGM5b6z77yR5LiB55uu77yR77yS4oiS77yX!5e0!3m2!1sja!2sjp!4v1622969660364!5m2!1sja!2sjp"
                                 allowfullscreen="" loading="lazy" class="border border-primary"></iframe>
                         </div>
-                        <div class="row mb-5 mb-sm-3">
+                        <div class="row mb-0 mb-sm-3">
                             <div class="col-12 col-sm-6 text-center text-sm-start">
                                 <address>
                                     <p>incipit（インキピット）保育園<br>
                                         〒272-0138千葉県市川市南行徳1-12-7<br>
-                                        東京メトロ東西線　南行徳駅　徒歩5分</p>
+                                        東京メトロ東西線 南行徳駅 徒歩5分</p>
                                 </address>
                             </div>
                             <div class="col-12 col-sm-6 text-center text-sm-start">
@@ -198,12 +343,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="ps-4">
-                            <div class="fb-page border border-primary"
+                    <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-sm-0 py-4 py-sm-0 fb-bg">
+                        <div class="ms-0 ms-sm-4 border border-primary">
+                            <div class="fb-page"
                                 data-href="https://www.facebook.com/incipithoikuen216/" data-tabs="timeline"
                                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                                data-show-facepile="true">
+                                data-show-facepile="true" data-width="500">
                                 <blockquote cite="https://www.facebook.com/incipithoikuen216/"
                                     class="fb-xfbml-parse-ignore"><a
                                         href="https://www.facebook.com/incipithoikuen216/">incipit保育園</a></blockquote>
@@ -214,7 +359,7 @@
             </div>
         </section>
         <section id="form">
-            <div class="container py-6">
+            <div class="container py-4 py-sm-6">
                 <div class="row justify-content-center">
                     <div class="col-11 col-sm-8">
                         <h2 class="text-center mb-4 inViewFade">お問い合わせ</h2>
@@ -224,8 +369,6 @@
                         <script type="text/javascript">var submitted = false;</script>
                         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                             onload="if(submitted) {window.location='http://daisukek2.sg-host.com/thankyou/index.html';}"></iframe>
-                        <!-- <form action="YOUR-EMBEDDED-GOOGLE-SPREADSHEET-LINK" method="post" > -->
-
 
                         <form
                             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8RzFASNFMiuFP9BWNW-YMy9ryLz95pJ8LlC7QnV3oKB0eJA/formResponse"
@@ -269,7 +412,6 @@
                             </div>
 
                             <div class="d-grid">
-                                <!-- <input id="submit" type="submit" value="send" /> -->
                                 <button role="button" type="submit" class="btn btn-primary">上記内容で送信する</button>
                             </div>
                         </form>
@@ -277,10 +419,99 @@
                 </div>
             </div>
         </section>
+        <!-- <section class="my_bg hero" id="hero">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100 align-items-center">
+                    <div class="col text-center font-serif text-whitea70">
+                        <h1>冒険のはじまり</h1>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section id="about">
+            <div class="container py-6">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-10 col-sm-6 col-lg-4 offset-right order-1 order-sm-0">
+                        <div class="row">
+                            <div class="col-12 mx-auto col-sm-12 bg_grad_red pt-0 pb-4 px-5">
+                                <h2 class="inViewFade offset-heading">incipit保育園とは</h2>
+                                <p class="inViewFade">
+                                    incipit（インキピット）とはラテン語で「〜からの始まり」という意味があります。小規模保育園は子どもたちが初めて親元から離れて会に触れる第一歩です。<br>その最初の一歩を一緒に踏み出すための施設でありたいと願っています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row" style="position:relative;">
+                            <div class="col-auto mx-auto ms-sm-auto">
+                                <a href="./about/index.html">
+                                    <button role="button"
+                                        class="btn-primary btn short offset-button inViewFade">もっと見る</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-sm-6 col-lg-5 mb-5 mb-sm-0">
+                        <img src="images/incipit/room1.jpg" alt="about incipit"
+                            class="img-fluid offset-left z-back inViewFade" />
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section id="blog" class="bg_grad_yellow_pale">
+            <div class="container py-6">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-6 col-lg-4">
+                        <img src="./images/incipit/toys.jpg" alt="おもちゃ" class="img-fluid inViewFade">
+                    </div>
+                    <div class="col-11 col-sm-6 col-lg-4 p-4">
+                        <h2 class="inViewFade">日々のできごと</h2>
+                        <p class="my-4 inViewFade">子どもたちは日々成長し、新しい発見や学びを繰り返しています。<br>
+                            そんな日常から、行事などの特別な日まで、incipit保育園の軌跡をつづっています。</p>
+                        <div class="row">
+                            <div class="col-auto col-sm-5 d-grid mx-auto ms-sm-auto">
+                                <button role="button"
+                                    class="btn short btn-primary inViewFade disabled">ブログへ（作成中）</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section id="other">
+            <div class="container py-6">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-10 col-sm-6 col-lg-4 bg_grad_blue pt-0 pb-4 px-5 order-1 order-sm-0 offset-right">
+                        <h2 class="offset-heading inViewFade">姉妹園・法人</h2>
+                        <div class="row inViewFade mb-4">
+                            <div class="col-12 col-sm-auto">
+                                <p class>にじのき保育園</p>
+                            </div>
+                            <div class="col-12 col-sm-4 ms-auto">
+                                <a href="https://nijinoki.ed.jp/">
+                                    <button role="button" class="btn short btn-primary">保育園HPへ</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row inViewFade">
+                            <div class="col-12 col-sm-auto">
+                                <p>株式会社にじいろキャンバス</p>
+                            </div>
+                            <div class="col-12 col-sm-4 ms-auto">
+                                <a href="https://nijiirocanvas216.pro/">
+                                    <button role="button" class="btn short btn-primary">会社HPへ</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-sm-6 col-lg-5 offset-left z-back mb-5 mb-sm-0">
+                        <img src="images/incipit/nijinoki.jpg" alt="にじのき保育園" class="img-fluid inViewFade">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
     </main>
 
-    <footer class="multi-grad">
-        <!-- Footer -->
+    <footer class="bg-nijitaupe">
         <div class="container py-3">
             <div class="row justify-content-center">
                 <div class="col-3">
